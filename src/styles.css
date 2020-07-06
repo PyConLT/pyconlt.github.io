@@ -58,7 +58,7 @@ body {
 }
 
 .text-blue {
-  color: #3776AA;
+  color: #3776aa;
 }
 
 .social-icon {
@@ -66,5 +66,21 @@ body {
 }
 
 .bg-yellow {
-  background-color: #FDB913;
+  background-color: #fdb913;
 }
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
+@keyframes blinker {
+  0% {
+    opacity: 100;
+  }
+  80% {
+    opacity: 100;
+  }
+  90% {
+    opacity: 0.7;
+  }
+}
+
