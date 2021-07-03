@@ -1,45 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html xml:lang="en" lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-T2GBD5M');</script>
-  <!-- End Google Tag Manager -->
-
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <title>PyCon Lithuania 2021 | Python and PyData Conference</title>
+
+  <!-- Google Search-->
+  <meta name="description" content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals." />
+  <meta name="google" content="nositelinkssearchbox" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PyCon Lithuania" />
+  <meta property="og:description" content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals." />
+  <!-- TODO: Use custom images for “shareable” pages (e.g., homepage, articles, etc.)
+  Use your logo or any other branded image for the rest of your pages.
+  Use images with a 1.91:1 ratio and minimum recommended dimensions of 1200x630 for optimal clarity across all devices. -->
+  <!-- SVG are not supported -->
+  <meta property="og:image" content="https:/www.pycon.lt/src/img/cover.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.pycon.lt" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- LD Json -->
+  <!-- https://search.google.com/test/rich-results -->
+  <script type='application/ld+json'>
+    {
+      "@context": "https://www.schema.org",
+      "@type": "Event",
+      "name": "PyCon Lithuania 2021",
+      "url": "https://www.pycon.lt",
+      "description": "PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals.",
+      "startDate": "05/14/2021 09:00AM",
+      "endDate": "05/16/2021 17:00PM",
+      "eventStatus": "EventScheduled",
+      "eventAttendanceMode": "OfflineEventAttendanceMode",
+      "image": "https:/www.pycon.lt/src/img/cover.png",
+      "location": {
+        "@type": "Place",
+        "name": "University of Social Sciences",
+        "sameAs": "https://www.smk.lt/en",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Kaunas, Kalvarijų st. 137E",
+          "postalCode": "LT-08221",
+          "addressCountry": "Lithuania"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "PyCon Lithuania",
+        "url": "https://www.pycon.lt"
+      },
+      "performer": [
+        {
+          "@type": "Person",
+          "name": "Brandon Rhodes",
+          "sameAs": "https://github.com/brandon-rhodes"
+        }
+      ]
+    }
+  </script>
+  <!-- TODO When tickets are available -->
+  <!-- "offers": {
+    "@type": "Offer",
+    "url": "https://www.example.com/event_offer/12345_201803180430",
+    "price": "30",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2021-01-20T16:00"
+  }, -->
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-T2GBD5M');</script>
+  <!-- End Google Tag Manager -->
+
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="src/styles.css" type="text/css">
-  </link>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="src/styles.css">
+
+  <!-- JQuery: not required? -->
+  <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+
+  <!-- Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+
+  <!-- Bootstrap -->
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GBD5M"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GBD5M" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
-      <img src="src/img/favicon.png" width="30" height="30" alt="">
+      <img src="./src/img/favicon.png" width="30" height="30" alt="favicon python lt">
     </a>
-    <a class="navbar-brand" href="#">Pycon LT</a>
+    <p class="h1 navbar-brand">
+      PyCon LT
+    </p>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +135,7 @@
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link m-2" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link m-2" href="#" aria-current="page">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link m-2" href="#about">About</a>
@@ -66,8 +147,12 @@
           <a class="nav-link m-2" href="#contact">Contact</a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- Cover image -->
   <div class="cover-container">
     <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
@@ -111,33 +196,26 @@
         <a class="btn btn-danger m-2 text-light font-weight-bold">Fill the form</a>
       </div>
     </div>
-  </div>
+  </section>
+
 
   <!-- Photos -->
-  <div class="container-fluid">
+  <section class="container-fluid" aria-labelledby="more-photos-heading">
+    <h2 class="sr-only" id="more-photos-heading">More photos</h2>
     <div class="row no-gutters">
-      <div class="col-4">
-        <img src="src/img/IMG_2580.JPG" class="img-rounded img-thumbnail" />
+      <div class="col-4 ">
+        <img src="src/img/photos/4.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="workshop attendees" />
       </div>
       <div class="col-4">
-        <img src="src/img/IMG_2630.JPG" class="img-rounded img-thumbnail" />
+        <img src="src/img/photos/5.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="queue for book signing" />
       </div>
       <div class="col-4">
-        <img src="src/img/IMG_2852.JPG" class="img-rounded img-thumbnail" />
+        <img src="src/img/photos/6.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="Robert giving opening speech"/>
       </div>
       <div class="w-100">
       </div>
-      <div class="col-4">
-        <img src="src/img/IMG_3192.JPG" class="img-rounded img-thumbnail" />
-      </div>
-      <div class="col-4">
-        <img src="src/img/IMG_2970.JPG" class="img-rounded img-thumbnail" />
-      </div>
-      <div class="col-4">
-        <img src="src/img/IMG_3337.JPG" class="img-rounded img-thumbnail" />
-      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Newsletter and Link -->
   <div class="container-fluid pt-5 pb-5 bg-black text-light" id="contact">
@@ -151,19 +229,43 @@
         <div class="col-auto">
           <a href="https://twitter.com/PyConLT"><img class="social-icon" src="src/img/twitter.svg" /></a>
         </div>
-        <div class="col-auto">
-          <a href="https://www.linkedin.com/company/PyConLT"><img class="social-icon" src="src/img/linkedin.svg" /></a>
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h3 class="h5 text-uppercase">Past events</h3>
+          <ul class="list-unstyled">
+            <li>
+              Work in progress
+            </li>
+          </ul>
         </div>
-        <div class="col-auto">
-          <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon" src="src/img/youtube.svg" /></a>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h3 class="h5 text-uppercase">Links</h3>
+          <ul class="list-unstyled">
+            <li>
+              <a class="btn btn-primary m-2 text-light" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">
+                Newsletter
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon"
+                  src="src/img/icons/youtube.svg" alt="YouTube" /></a>
+              <a href="https://www.linkedin.com/company/PyConLT"><img class="social-icon"
+                  src="src/img/icons/linkedin.svg" alt="LinkedIn" /></a>
+              <a href="https://twitter.com/PyConLT"><img class="social-icon" src="src/img/icons/twitter.svg" alt="Twitter" /></a>
+              <a href="https://www.facebook.com/PyConLT/"><img class="social-icon"
+                  src="src/img/icons/facebook.svg" alt="Facebook" /></a>
+            </li>
+          </ul>
         </div>
         <div class="col-auto">
           <a href="https://www.meetup.com/vilniuspy/"><img class="social-icon" src="src/img/meetup-logo.png" /></a>
         </div>
       </div>
     </div>
-  </div>
-
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://pycon.lt" aria-label="PyCon dot LT"> pycon.lt</a>
+    </div>
+  </footer>
 </body>
 
 </html>
