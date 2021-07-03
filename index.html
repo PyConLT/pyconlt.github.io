@@ -35,10 +35,9 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GBD5M"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <a class="navbar-brand" href="#">
-      <img src="https://www.pycon.lt/static/info/img/favicon.png" width="30" height="30" alt="">
+      <img src="src/img/favicon.png" width="30" height="30" alt="">
     </a>
     <a class="navbar-brand" href="#">Pycon LT</a>
 
@@ -48,12 +47,9 @@
     </button>
 
     <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+      <ul class="nav navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="btn btn-danger m-2 text-light">Buy tickets</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary m-2 text-light">Schedule</a>
+          <a class="btn btn-warning m-2 text-light font-weight-bold" href="https://tickets.paysera.com/lt/event/pycon-lithuania-2021-3465?fbclid=IwAR01B_IZ97uZglsiNbSqHi1_0EXdnTwGhwKsS9w5sMxUgj5sbKvpp-zZsfg">Buy tickets</a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -63,9 +59,9 @@
         <li class="nav-item">
           <a class="nav-link m-2" href="#about">About</a>
         </li>
-        <li class="nav-item">
+<!--        <li class="nav-item">
           <a class="nav-link m-2" href="#topics">Topics</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link m-2" href="#contact">Contact</a>
         </li>
@@ -76,7 +72,7 @@
     <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="src/img/cover.png" alt="First slide">
+          <img class="d-block w-100" src="src/img/cover.jpg" alt="First slide">
         </div>
       </div>
     </div>
@@ -86,136 +82,25 @@
   <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="about">
     <div class="container">
       <h2 class="font-weight-bold text-uppercase text-center pb-2">About Pycon LT</h2>
-      <p>PyCon LT is a community event that brings together new and experienced Python users
-        <p>Our goals are:</p>
-        <ul>
-          <li>Grow and support a community of Python users</li>
-          <li>Encourage learning and knowledge sharing</li>
-          <li>Popularize Python tools/libraries and open source in general</li>
-        </ul>
-        <p>PyCon LT is organized since 2009.</p>
+      <p class="text-center">PyCon LT is a community event that brings together new and experienced Python users
+        <p class="text-center">Our goals are:</p>
+        <div class="d-flex">
+          <ul class="mx-auto justify-content-center">
+            <li>Grow and support a community of Python users</li>
+            <li>Encourage learning and knowledge sharing</li>
+            <li>Popularize Python tools/libraries and open source in general</li>
+          </ul>
+        </div>
+        <p class="text-center">PyCon LT is organized since 2009.</p>
     </div>
   </div>
-
-  <!-- Three take aways -->
-  <div class="container-fluid pt-5 pb-5 bg-black text-light">
-    <div class="container">
-      <div class="row pb-3">
-        <div class="col-4 text-blue">
-          <img class="social-icon pr-1" src="src/img/gear.svg" />
-          Discover tools and tips
-        </div>
-        <div class="col-4 text-blue">
-          <img class="social-icon pr-1" src="src/img/link.svg" />
-          Network with experts
-        </div>
-        <div class="col-4 text-blue">
-          <img class="social-icon pr-1" src="src/img/gem.svg" />
-          Technically rich talks
-        </div>
-      </div>
-      <!-- <div class="row">
-        <div class="col-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        </div>
-        <div class="col-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        </div>
-        <div class="col-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        </div>
-      </div> -->
-    </div>
-  </div>
-
-  <!-- Event in numbers -->
-  <div class="container-fluid pt-5 pb-5 bg-yellow text-blue">
-    <div class="container">
-      <div class="row pb-3">
-        <div class="col-3">
-          <h2 class="font-weight-bold">2</h2>
-        </div>
-        <div class="col-3">
-          <h2 class="font-weight-bold">3</h2>
-        </div>
-        <div class="col-3">
-          <h2 class="font-weight-bold">15</h2>
-        </div>
-        <div class="col-3">
-          <h2 class="font-weight-bold">350+</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <h2>Days</h2>
-        </div>
-        <div class="col-3">
-          <h2>Tracks</h2>
-        </div>
-        <div class="col-3">
-          <h2>Speakers</h2>
-        </div>
-        <div class="col-3">
-          <h2>Atendees</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Topics -->
-  <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="topics">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h2 class="text-center text-uppercase">Topics</h2>
-        </div>
-      </div>
-      <div class="row pt-5 justify-content-around">
-        <div class="col-4">
-          <p class="float-right">
-            Machine learning
-          </p>
-        </div>
-        <div class="col-4">
-          Deep learning
-        </div>
-      </div>
-      <div class="row pt-5 justify-content-around">
-        <div class="col-4">
-          <p class="float-right">
-            Open source
-          </p>
-        </div>
-        <div class="col-4">
-          Design patterns
-        </div>
-      </div>
-      <div class="row pt-5 justify-content-around">
-        <div class="col-4">
-          <p class="float-right">
-            Web development
-          </p>
-        </div>
-        <div class="col-4">
-          Internet of things
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Schedule -->
-  <!-- <div class="container-fluid bg-black text-light pt-5 pb-5">
-    <div class="container">
-      <h2 class="text-center pb-2">Schedule</h2>
-      Coming soon...
-    </div>
-  </div> -->
 
   <!-- Call for proposals -->
-  <div class="container-fluid pt-5 pb-5 bg-dark text-light">
+  <div class="container-fluid pt-5 pb-5">
     <div class="container">
       <h2 class="text-center pb-2">Call for proposals</h2>
-      <p>
+      <p class="text-center">
+        Become a speaker! <br />
         For more details on Call for Proposals please visit our
         <a href="https://pretalx.com/pyconlt2020/cfp">
           Pretalx CFP
@@ -223,20 +108,7 @@
         page.
       </p>
       <div class="text-center">
-        <a class="btn btn-danger m-2 text-light">Fill the form</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Become a sponsor -->
-  <div class="container-fluid pt-5 pb-5 bg-black text-light">
-    <div class="container">
-      <h2 class="text-center">Become a sponsor</h2>
-      <p>
-        Please contact us at sponsorship et pycon.lt
-      </p>
-      <div class="text-center">
-        <a class="btn btn-danger m-2 text-light">Become a sponsor</a>
+        <a class="btn btn-danger m-2 text-light font-weight-bold">Fill the form</a>
       </div>
     </div>
   </div>
@@ -271,7 +143,7 @@
   <div class="container-fluid pt-5 pb-5 bg-black text-light" id="contact">
     <div class="container text-center">
       <h2 class="font-weight-bold text-uppercase text-center pb-2">Never miss our event</h2>
-      <a class="btn btn-primary m-2 text-light" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">Newsletter</a>
+      <a class="btn btn-primary m-2 text-light font-weight-bold" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">Newsletter</a>
       <div class="row pt-5 justify-content-center">
         <div class="col-auto">
           <a href="https://www.facebook.com/PyConLT/"><img class="social-icon" src="src/img/facebook.svg" /></a>
@@ -284,6 +156,9 @@
         </div>
         <div class="col-auto">
           <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon" src="src/img/youtube.svg" /></a>
+        </div>
+        <div class="col-auto">
+          <a href="https://www.meetup.com/vilniuspy/"><img class="social-icon" src="src/img/meetup-logo.png" /></a>
         </div>
       </div>
     </div>
