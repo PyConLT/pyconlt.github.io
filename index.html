@@ -127,13 +127,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <nav class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+      <ul class="nav navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="btn btn-danger m-2 text-light disabled">Buy tickets</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-primary m-2 text-light disabled">Schedule</a>
+          <a class="btn btn-warning m-2 text-light font-weight-bold" href="https://tickets.paysera.com/lt/event/pycon-lithuania-2021-3465?fbclid=IwAR01B_IZ97uZglsiNbSqHi1_0EXdnTwGhwKsS9w5sMxUgj5sbKvpp-zZsfg">Buy tickets</a>
         </li>
       </ul>
       <ul class="navbar-nav">
@@ -143,8 +140,11 @@
         <li class="nav-item">
           <a class="nav-link m-2" href="#about">About</a>
         </li>
+<!--        <li class="nav-item">
+          <a class="nav-link m-2" href="#topics">Topics</a>
+        </li> -->
         <li class="nav-item">
-          <a class="nav-link m-2" href="#participate">Participate</a>
+          <a class="nav-link m-2" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
@@ -157,228 +157,98 @@
     <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="src/img/cover-min.svg" alt="">
+          <img class="d-block w-100" src="src/img/cover.jpg" alt="First slide">
         </div>
       </div>
     </div>
   </div>
 
-  <h1 class="sr-only">PyCon LT 2021, May 14-16, Vilnius Lithuania, Keystone partner Oxylabs</h1>
-
-
-
-  <!-- Sponsors -->
-  <section class="container-fluid" id="sponsors" aria-labelledby="sponsors-heading">
-    <div class="container">
-      <h2 class="text-center pb-2" id="sponsors-heading">Sponsors</h2>
-      <div class="row pb-3">
-        <div class="col-xs-12 col-md-12">
-          <div class="container-fluid text-center">
-            <img class="img-fluid" src="src/img/logos/oxylabs.jpg" alt="Oxylabs">
-          </div>
-        </div>
-        <div class="col-xs-3 col-md-6">
-          <div class="container-fluid text-center">
-            <img class="img-fluid " src="src/img/logos/pretalx.svg" alt="Pretalx" style="max-width: 30%">
-          </div>
-        </div>
-        <div class="col-xs-3 col-md-6">
-          <div class="container-fluid text-center">
-            <img class="img-fluid" src="src/img/logos/pythonanywhere.png" alt="PythonAnywhere" style="max-width: 50%">
-          </div>
-        </div>
-      </div>
-      <div class="col text-right">
-        <a class="btn btn-danger m-2 text-light" href="">
-          Become a sponsor
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- About -->
-  <section class="container-fluid pt-5 pb-5 bg-dark text-light" id="about" aria-labelledby="about-heading">
-    <h2 class="sr-only" id="about-heading">About</h2>
+  <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="about">
     <div class="container">
-      <div class="row pb-3">
-        <div class="col-xs-12 col-md-4">
-          <h3 class="font-weight-bold text-uppercase text-center pb-2">
-              Take aways
-            </h3>
-
-            <img class="social-icon pr-1" src="src/img/icons/gear.svg" alt="" />
-            Discover tools and tips<br>
-            <img class="social-icon pr-1" src="src/img/icons/link.svg" alt="" />
-            Network with experts<br>
-            <img class="social-icon pr-1" src="src/img/icons/gem.svg" alt="" />
-            Technically rich talks<br>
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <h3 class="font-weight-bold text-uppercase text-center pb-2">Topics</h3>
-            Data Engineering, Machine learning, Data Science, Web Development, MicroServices, AWS, Optimization,
-            Testing, Best Practices,
-          </div>
-
-          <div class="col-xs-12 col-md-4">
-            <div class="container">
-            <h3 class="font-weight-bold text-uppercase text-center pb-2">In Numbers</h3>
-            2 Days
-            20 Talks
-            Social Event
-            Networking
-          </div>
-
+      <h2 class="font-weight-bold text-uppercase text-center pb-2">About Pycon LT</h2>
+      <p class="text-center">PyCon LT is a community event that brings together new and experienced Python users
+        <p class="text-center">Our goals are:</p>
+        <div class="d-flex">
+          <ul class="mx-auto justify-content-center">
+            <li>Grow and support a community of Python users</li>
+            <li>Encourage learning and knowledge sharing</li>
+            <li>Popularize Python tools/libraries and open source in general</li>
+          </ul>
         </div>
-      </div>
+        <p class="text-center">PyCon LT is organized since 2009.</p>
     </div>
-  </section>
-
-
-  <!-- Photos -->
-  <section class="container-fluid" aria-labelledby="photos-heading">
-    <h2 class="sr-only" id="photos-heading">Photos</h2>
-    <div class="row no-gutters">
-      <div class="col-4">
-        <img src="src/img/photos/1.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="speaker and attendees"/>
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/2.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="Speaker Ian Ozsvald" />
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/3.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="people climbing stairs"/>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Schedule -->
-  <!-- <div class="container-fluid bg-black text-light pt-5 pb-5">
-    <div class="container">
-      <h2 class="text-center pb-2">Schedule</h2>
-      Coming soon...
-    </div>
-  </div> -->
+  </div>
 
   <!-- Call for proposals -->
-  <section class="container-fluid pt-5 pb-5 bg-white" id='participate' aria-labelledby="participate-heading">
+  <div class="container-fluid pt-5 pb-5">
     <div class="container">
-      <h2 class="text-center pb-2" id="participate-heading">
-        Choose your role
-      </h2>
-
-      <div class="row pb-3">
-        <div class="col-xs-12 col-md-6">
-          <h3>Participant</h3>
-          Become part of PyConLT community
-
-          <div class="col text-center">
-            <a class="btn btn-lg btn-danger m-2 text-light disabled" href="">
-              Buy Ticket
-            </a>
-          </div>
-
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <h3>Speaker</h3>
-          Share your knowledge.
-          Note: we provide support for first time speakers!
-          <div class="col text-center">
-            <a class="btn btn-danger m-2 text-light" href="https://pretalx.com/pyconlt2020/cfp">
-              Become a speaker
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="row pb-3">
-        <div class="col-xs-12 col-md-6">
-          <h3>Sponsor</h3>
-          Support Python community and make yourself known by sponsoring PyConLT!
-          <div class="col text-center">
-            <a class="btn btn-danger m-2 text-light" href="https://bit.ly/3ekMkcY">
-              Become a sponsor
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-6">
-          <h3>Volunteer</h3>
-          We are always looking for volunteers.
-          <div class="col text-center">
-            <a class="btn btn-danger m-2 text-light" href="https://forms.gle/QMTZ7RAufPwb67oE7">
-              Become a volunteer
-            </a>
-          </div>
-        </div>
+      <h2 class="text-center pb-2">Call for proposals</h2>
+      <p class="text-center">
+        Become a speaker! <br />
+        For more details on Call for Proposals please visit our
+        <a href="https://pretalx.com/pyconlt2020/cfp">
+          Pretalx CFP
+        </a>
+        page.
+      </p>
+      <div class="text-center">
+        <a class="btn btn-danger m-2 text-light font-weight-bold">Fill the form</a>
       </div>
     </div>
-  </section>
+  </div>
 
 
   <!-- Photos -->
-  <section class="container-fluid" aria-labelledby="more-photos-heading">
-    <h2 class="sr-only" id="more-photos-heading">More photos</h2>
+  <div class="container-fluid" aria-labelledby="more-photos-heading">
     <div class="row no-gutters">
-      <div class="col-4 ">
-        <img src="src/img/photos/4.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="workshop attendees" />
+      <div class="col-4">
+        <img src="src/img/photos/1.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference opening speach" />
       </div>
       <div class="col-4">
-        <img src="src/img/photos/5.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="queue for book signing" />
+        <img src="src/img/photos/5.JPG" class="img-thumbnail img-rounded img-fluid" alt="queue for book signing" />
       </div>
       <div class="col-4">
-        <img src="src/img/photos/6.jpeg" class="img-rounded img-thumbnail d-none d-lg-block" alt="Robert giving opening speech"/>
+        <img src="src/img/photos/3.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference hall"/>
       </div>
-      <div class="w-100">
+    <div class="w-100">
+    </div>
+      <div class="col-4">
+        <img src="src/img/photos/4.JPG" class="img-thumbnail img-rounded img-fluid" alt="workshop atendees"/>
+      </div>
+      <div class="col-4">
+        <img src="src/img/photos/2.JPG" class="img-thumbnail img-rounded img-fluid" alt="Robert giving speach"/>
+      </div>
+      <div class="col-4">
+        <img src="src/img/photos/6.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference audience"/>
       </div>
     </div>
-  </section>
+  </div>
 
-  </main>
-
-  <footer class="footer font-small blue pt-4">
-    <h2 class="sr-only">Footer</h2>
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h3 class="h5 text-uppercase" aria-label="PyCon LT">PyConLT</h3>
-          <p>PyCon Lithuania is community organized event.
-            PyConLT takes place annually. It is non-profit event.
-          </p>
+  <!-- Newsletter and Link -->
+  <div class="container-fluid pt-5 pb-5 bg-black text-light" id="contact">
+    <div class="container text-center">
+      <h2 class="font-weight-bold text-uppercase text-center pb-2">Never miss our event</h2>
+      <a class="btn btn-primary m-2 text-light font-weight-bold" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">Newsletter</a>
+      <div class="row pt-5 justify-content-center">
+        <div class="col-auto">
+          <a href="https://www.facebook.com/PyConLT/"><img class="social-icon" src="src/img/icons/facebook.svg" /></a>
         </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h3 class="h5 text-uppercase">Past events</h3>
-          <ul class="list-unstyled">
-            <li>
-              Work in progress
-            </li>
-          </ul>
+        <div class="col-auto">
+          <a href="https://twitter.com/PyConLT"><img class="social-icon" src="src/img/icons/twitter.svg" /></a>
         </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h3 class="h5 text-uppercase">Links</h3>
-          <ul class="list-unstyled">
-            <li>
-              <a class="btn btn-primary m-2 text-light" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">
-                Newsletter
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon"
+        <div class="col-auto">
+          <a href="https://www.meetup.com/vilniuspy/"><img class="social-icon" src="src/img/meetup-logo.png" /></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon"
                   src="src/img/icons/youtube.svg" alt="YouTube" /></a>
-              <a href="https://www.linkedin.com/company/PyConLT"><img class="social-icon"
-                  src="src/img/icons/linkedin.svg" alt="LinkedIn" /></a>
-              <a href="https://twitter.com/PyConLT"><img class="social-icon" src="src/img/icons/twitter.svg" alt="Twitter" /></a>
-              <a href="https://www.facebook.com/PyConLT/"><img class="social-icon"
-                  src="src/img/icons/facebook.svg" alt="Facebook" /></a>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
       <a href="https://pycon.lt" aria-label="PyCon dot LT"> pycon.lt</a>
     </div>
-  </footer>
+   </div>
 </body>
 
 </html>
