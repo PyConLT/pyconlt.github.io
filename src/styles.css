@@ -88,3 +88,11 @@ body {
 body {
   padding-top: 65px;
 }
+
+.keystone-logo {
+  max-height: 350px;
+}
+
+.speaker-photo {
+  max-height: 200px;
+}
