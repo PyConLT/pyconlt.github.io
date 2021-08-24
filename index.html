@@ -106,6 +106,8 @@
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://pretalx.com/pyconlt2020/schedule/widget/v2.en.js"></script>
 </head>
 
 <body>
@@ -142,6 +144,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link m-2" href="#speakers">Speakers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link m-2" href="#schedule">Schedule</a>
         </li>
         <li class="nav-item">
           <a class="nav-link m-2" href="#location">Location</a>
@@ -183,24 +188,6 @@
           </ul>
         </div>
         <p class="text-center">PyCon LT is organized since 2009.</p>
-    </div>
-  </div>
-
-  <!-- Call for proposals -->
-  <div class="container-fluid pt-5 pb-5 bg-black text-light">
-    <div class="container">
-      <h2 class="text-center pb-2">Call for proposals</h2>
-      <p class="text-center">
-        Become a speaker! <br />
-        For more details on Call for Proposals please visit our
-        <a href="https://pretalx.com/pyconlt2020/cfp">
-          Pretalx CFP
-        </a>
-        page.
-      </p>
-      <div class="text-center">
-        <a class="btn btn-danger m-2 text-light font-weight-bold" href="https://pretalx.com/pyconlt2020/cfp">Fill the form</a>
-      </div>
     </div>
   </div>
 
@@ -248,17 +235,29 @@
   <div class="container-fluid pt-5 pb-5 bg-yellow text-blue" id="speakers">
     <div class="container">
       <div class="container">
-        <h2 class="text-center pb-2">Keynote Speaker</h2>
+        <h2 class="text-center pb-2">Keynote Speakers</h2>
         <div class="row justify-content-md-center">
-         <div class="col">
-           <div class="row justify-content-md-center">
+         <div class="col-sm">
+           <div class="row justify-content-center">
              <img src="src/img/speakers/sebastian.jpg" class="rounded-circle speaker-photo">
            </div>
-           <div class="row justify-content-md-center mt-2">
+           <div class="row justify-content-center mt-2">
             <h4>Sebastián Ramírez</h4>
            </div>
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <h5>Modern Python through FastAPI and friends</h5>
+           </div>
+         </div> 
+
+         <div class="col-sm">
+           <div class="row justify-content-center">
+             <img src="src/img/speakers/christian-heimes.jpg" class="rounded-circle speaker-photo">
+           </div>
+           <div class="row justify-content-center mt-2">
+            <h4>Christian Heimes</h4>
+           </div>
+           <div class="row justify-content-center">
+             <h5>Ask a core developer anything</h5>
            </div>
          </div> 
         </div>
@@ -266,44 +265,99 @@
 
       <div class="container pt-3">
         <h2 class="text-center pb-2">Speakers</h2>
-        <div class="row justify-content-md-center">
+        <div class="row justify-content-center">
          <div class="col-sm">
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <img src="src/img/speakers/petras.jpg" class="rounded-circle speaker-photo">
            </div>
-           <div class="row justify-content-md-center mt-2">
+           <div class="row justify-content-center mt-2">
             <h4>Petras Zdanavičius</h4>
            </div>
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <h5 class="text-center">Python Integers: nitty-gritty details</h5>
            </div>
          </div> 
 
          <div class="col-sm">
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <img src="src/img/speakers/justinas.jpeg" class="rounded-circle speaker-photo">
            </div>
-           <div class="row justify-content-md-center mt-2">
+           <div class="row justify-content-center mt-2">
             <h4>Justinas Kuizinas (CCT)</h4>
            </div>
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <h5 class="text-center">JWT and OAuth2. Should we reinvent the wheel?</h5>
            </div>
          </div> 
 
          <div class="col-sm">
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <img src="src/img/speakers/deividas.jpg" class="rounded-circle speaker-photo">
            </div>
-           <div class="row justify-content-md-center mt-2">
+           <div class="row justify-content-center mt-2">
             <h4>Deividas Matačiūnas</h4>
            </div>
-           <div class="row justify-content-md-center">
+           <div class="row justify-content-center">
              <h5 class="text-center">Fine-tuning large NLP models</h5>
            </div>
          </div> 
         </div>
       </div>
+
+      <div class="row justify-content-center">
+       <div class="col-sm">
+         <div class="row justify-content-center">
+           <img src="src/img/speakers/simon.jpg" class="rounded-circle speaker-photo">
+         </div>
+         <div class="row justify-content-center mt-2">
+          <h4>Szymon Zaborowski</h4>
+         </div>
+         <div class="row justify-content-center">
+           <h5 class="text-center">Metric Learning for Session-Based Recommendations</h5>
+         </div>
+       </div> 
+
+       <div class="col-sm">
+         <div class="row justify-content-center">
+           <img src="src/img/speakers/sarunas.jpeg" class="rounded-circle speaker-photo">
+         </div>
+         <div class="row justify-content-center mt-2">
+          <h4>Šarūnas Navickas</h4>
+         </div>
+         <div class="row justify-content-center">
+           <h5 class="text-center">How to do Programming videos</h5>
+         </div>
+       </div> 
+
+       <div class="col-sm">
+         <div class="row justify-content-center">
+           <img src="src/img/speakers/jev.jpeg" class="rounded-circle speaker-photo">
+         </div>
+         <div class="row justify-content-center mt-2">
+          <h4>Jev Gamper</h4>
+         </div>
+         <div class="row justify-content-center">
+           <h5 class="text-center">Why care about experiments?</h5>
+         </div>
+       </div> 
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Schedule -->
+  <div class="container-fluid pt-5 pb-5 bg-black text-light" id="schedule">
+    <div class="container">
+      <h2 class="text-center pb-2">Schedule</h2>
+      <pretalx-schedule event-url="https://pretalx.com/pyconlt2020/" locale="en" format="grid" style="--pretalx-clr-primary: #3776AA"></pretalx-schedule>
+<noscript>
+   <div class="pretalx-widget">
+        <div class="pretalx-widget-info-message">
+            JavaScript is disabled in your browser. To access our schedule without JavaScript,
+            please <a target="_blank" href="https://pretalx.com/pyconlt2020/schedule/">click here</a>.
+        </div>
+    </div>
+</noscript>
     </div>
   </div>
 
@@ -312,13 +366,13 @@
     <div class="container">
       <h2 class="font-weight-bold text-uppercase text-center pb-2">Location</h2>
       <p class="text-center">Hotel Best Western, Konstitucijos pr. 14, Vilnius</p>
-      <div class="row justify-content-md-center">
-        <div class="col-sm-3">
-          <img src="src/img/photos/sale1.jpg" class="img-thumbnail img-rounded img-fluid float-right" alt="conference hall" />
-          <img src="src/img/photos/sale2.jpg" class="img-thumbnail img-rounded img-fluid float-right" alt="conference hall" />
+      <div class="row justify-content-center">
+        <div class="col-sm-auto pb-2">
+          <img src="src/img/photos/sale1.jpg" class="img-thumbnail img-rounded img-fluid" alt="conference hall" /><br />
+          <img src="src/img/photos/sale2.jpg" class="img-thumbnail img-rounded img-fluid" alt="conference hall" />
         </div>
-        <div class="col-md-auto">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.865686374953!2d25.27574871601531!3d54.694391180584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd940409c8a3a9%3A0x4cd7cb2e497a8a33!2sBest%20Western%20Vilnius!5e0!3m2!1slt!2slt!4v1628768655512!5m2!1slt!2slt" max-width="500" height="385" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="col-md-auto pt-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.865686374953!2d25.27574871601531!3d54.694391180584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd940409c8a3a9%3A0x4cd7cb2e497a8a33!2sBest%20Western%20Vilnius!5e0!3m2!1slt!2slt!4v1628768655512!5m2!1slt!2slt" max-width="500" height="388" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
