@@ -115,29 +115,18 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand" href="#">
-      <img src="./src/img/favicon.png" width="30" height="30" alt="favicon python lt">
+      <img src="./src/img/logos/pycon2022.svg" alt="python lt">
     </a>
-    <p class="h1 navbar-brand">
-      PyCon LT
-    </p>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-      <ul class="nav navbar-nav mr-auto">
-        <li class="nav-item">
-          <a
-          class="btn btn-warning m-2 text-light font-weight-bold"
-          onClick="dataLayer.push({event:'Buy ticket'})"
-          href="https://tickets.paysera.com/lt/event/pycon-lithuania-2021-3465?fbclid=IwAR01B_IZ97uZglsiNbSqHi1_0EXdnTwGhwKsS9w5sMxUgj5sbKvpp-zZsfg">Buy tickets</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-center bg-white" id="navbarSupportedContent">
+      <ul class="nav navbar-nav pt-4">
         <li class="nav-item active">
           <a class="nav-link m-2" href="#" aria-current="page">Home</a>
         </li>
@@ -148,285 +137,141 @@
           <a class="nav-link m-2" href="#speakers">Speakers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link m-2" href="#schedule">Schedule</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link m-2" href="#location">Location</a>
         </li>
-<!--        <li class="nav-item">
-          <a class="nav-link m-2" href="#topics">Topics</a>
-        </li> -->
         <li class="nav-item">
           <a class="nav-link m-2" href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
-  </header>
 
-  <main>
+  <div class="flag-container container-fluid">
+    <div class="row">
+      <div class="col-sm bg-yellow">
+      </div>
+      <div class="col-sm bg-green">
+      </div>
+      <div class="col-sm bg-red">
+      </div>
+    </div>
+  </div>
 
   <!-- Cover image -->
   <div class="cover-container">
     <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="src/img/cover.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block" style="bottom: auto">
+            <h5 class="text-blue">May 26-27</h5>
+            <p class="text-blue">Vilnius</p>
+          </div>
+          <img class="d-block w-100" src="src/img/cover_2022.jpg" alt="First slide">
         </div>
       </div>
     </div>
   </div>
-
-    <!-- COVID -->
-    <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="covid">
-      <div class="container">
-        <h2 class="font-weight-bold text-uppercase text-center pb-2">COVID-19 update</h2>
-          <div class="d-flex">
-            <ul class="mx-auto justify-content-center">
-              <li>National Certificate (Galimybių Pasas) or equivalent is required for all participants. Organizers may choose to check on the entrance.</li>
-              <li>Mask policy differs based on exact place in the venue. See further.</li>
-              <li>Masks are mandatory(required) in Best Western public spaces.</li>
-              <li>Masks are recommended in PyCon LT specific spaces.</li>
-              <li>If in doubt, please just have the mask on and ask volunteers.</li>
-            </ul>
-          </div>
-          <p class="text-center">If you are not satisfied with these requirements, we kindly offer a refund. Please contact info@pycon.lt</p>
-      </div>
-    </div>
-
-    <!-- Schedule -->
-    <div class="container-fluid pt-5 pb-5" id="schedule">
-      <div class="container">
-        <h2 class="text-center pb-2">Schedule</h2>
-        <pretalx-schedule event-url="https://pretalx.com/pyconlt2020/" locale="en" format="grid" style="--pretalx-clr-primary: #3776AA"></pretalx-schedule>
-        <noscript>
-           <div class="pretalx-widget">
-                <div class="pretalx-widget-info-message">
-                    JavaScript is disabled in your browser. To access our schedule without JavaScript,
-                    please <a target="_blank" href="https://pretalx.com/pyconlt2020/schedule/">click here</a>.
-                </div>
-            </div>
-        </noscript>
-      </div>
-    </div>
 
   <!-- About -->
-  <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="about">
-    <div class="container">
-      <h2 class="font-weight-bold text-uppercase text-center pb-2">About Pycon LT</h2>
-      <p class="text-center">PyCon LT is a community event that brings together new and experienced Python users
-        <p class="text-center">Our goals are:</p>
-        <div class="d-flex">
-          <ul class="mx-auto justify-content-center">
-            <li>Grow and support a community of Python users</li>
-            <li>Encourage learning and knowledge sharing</li>
-            <li>Popularize Python tools/libraries and open source in general</li>
-          </ul>
+  <div class="container-fluid pt-5 pb-5 bg-dark h-100">
+    <div class="container shadow bg-white text-blue w-75 h-100 pt-2" id="about">
+      <img class="pt-3 d-block mx-auto" src="src/img/gyvateles.svg" alt="snakes">
+      <p class="text-center pt-4">PyCon LT is a community event that brings together new and experienced Python users
+      <p class="text-center">PyCon LT is organized since 2009.</p>
+
+        <h4 class="text-center font-weight-bold">Our goals:</h4>
+        <div class="row">
+          <div class="col-sm">
+            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-1.svg" alt="snakes">
+          </div>
+          <div class="col-sm">
+            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-2.svg" alt="snakes">
+          </div>
+          <div class="col-sm">
+            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-3.svg" alt="snakes">
+          </div>
         </div>
-        <p class="text-center">PyCon LT is organized since 2009.</p>
+        <div class="row text-center font-weight-bold">
+          <div class="col-sm p-4">
+            Grow and support a community of Python users
+          </div>
+          <div class="col-sm p-4">
+            Encourage learning and knowledge sharing
+          </div>
+          <div class="col-sm p-4">
+            Popularize Python tools/libraries and open source in general
+          </div>
+        </div>
     </div>
   </div>
 
-  <!-- Sponsors -->
-  <div class="container-fluid pt-5 pb-5" id="sponsors">
-    <h2 class="text-center pb-2">Our sponsors</h2>
-    <div class="container"> 
-        <div class="row">
-        <div class="col-md-3 text-center mb-2">
-          <h4>Keystone Sponsor</h4>
-          <a href="https://oxylabs.io/" target="_blank"><img class="img-fluid" src="src/img/logos/oxy_logo.png"/></a>
-        </div>
-        <div class="col-md-3 text-center mb-2">
-          <h4>Gold Sponsors</h4>
-          <div class="container-fluid justify-content-center">
-            <div class="row justify-content-center">
-              <a href="https://www.cornercasetech.com/" target="_blank"><img class="img-fluid" src="src/img/logos/CCT_logo.svg"/></a>
-            </div>
-            <div class="row mt-2">
-              <a href="https://www.zealid.com/" target="_blank"><img class="img-fluid" src="src/img/logos/zealid-logo.svg"/></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 text-center my-2">
-          <h4>Silver Sponsors</h4>
-          <div class="row">
-            <a href="https://www.convious.com/" target="_blank"><img class="img-fluid" src="src/img/logos/Red.png"/></a>
-          </div>
-          <div class="row mt-2">
-            <a href="https://www.shoobx.com/" target="_blank"><img class="img-fluid" src="src/img/logos/Shoobx_master.png" class="pt-2"/></a>
-          </div>
-        </div>
-      <div class="col-md-3 text-center my-2">
-          <h4>Bronze Sponsors</h4>
-          <a href="https://www.strivr.com/" target="_blank"><img src="src/img/logos/Logo_Strivr.svg" style="max-height: 100px"/></a>
-      </div>
-    </div>
-    </div>
-  </div>
 
   <!-- Speakers-->
-  <div class="container-fluid pt-5 pb-5 bg-yellow text-black" id="speakers">
-    <div class="container">
+  <div class="container-fluid pt-5 pb-5 bg-white">
+    <div class="container pb-5 shadow bg-white text-blue" id="speakers">
+      <img class="pt-3 d-block mx-auto" src="src/img/gyvateles.svg" alt="snakes">
       <div class="container">
-        <h2 class="text-center pb-2">Keynote Speakers</h2>
-        <div class="row justify-content-md-center">
-         <div class="col-sm">
-           <div class="row justify-content-center">
-             <img src="src/img/speakers/sebastian.jpg" class="rounded-circle speaker-photo">
-           </div>
-           <div class="row justify-content-center mt-2">
-            <h4>Sebastián Ramírez</h4>
-           </div>
-           <div class="row justify-content-center">
-             <h5>Modern Python through FastAPI and friends</h5>
-           </div>
-         </div> 
+        <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
 
-         <div class="col-sm">
-           <div class="row justify-content-center">
-             <img src="src/img/speakers/christian-heimes.jpg" class="rounded-circle speaker-photo">
-           </div>
-           <div class="row justify-content-center mt-2">
-            <h4>Christian Heimes</h4>
-           </div>
-           <div class="row justify-content-center">
-             <h5>Ask a core developer anything</h5>
-           </div>
-         </div> 
+        <div class="row pt-3">
+          <div class="col">
+             <img src="src/img/speakers/sebastian.jpg" class="rounded speaker-photo">
+          </div>
+         <!--- <div class="col">
+             <img src="src/img/speakers/sebastian.jpg" class="rounded speaker-photo">
+          </div>
+          <div class="col">
+             <img src="src/img/speakers/sebastian.jpg" class="rounded speaker-photo">
+          </div>
+          <div class="col">
+             <img src="src/img/speakers/sebastian.jpg" class="rounded speaker-photo">
+          </div> -->
         </div>
-      </div>
 
-      <div class="container pt-3">
-        <h2 class="text-center pb-2">Speakers</h2>
-        <div class="row justify-content-center">
-         <div class="col-sm">
-           <div class="row justify-content-center">
-             <img src="src/img/speakers/petras.jpg" class="rounded-circle speaker-photo">
-           </div>
-           <div class="row justify-content-center mt-2">
-            <h4>Petras Zdanavičius</h4>
-           </div>
-           <div class="row justify-content-center">
-             <h5 class="text-center">Python Integers: nitty-gritty details</h5>
+         <div class="row">
+           <div class="col align-self-center font-weight-bold">
+            <p>Sebastián Ramírez</p>
            </div>
          </div> 
 
-         <div class="col-sm">
-           <div class="row justify-content-center">
-             <img src="src/img/speakers/justinas.jpeg" class="rounded-circle speaker-photo">
-           </div>
-           <div class="row justify-content-center mt-2">
-            <h4>Justinas Kuizinas (CCT)</h4>
-           </div>
-           <div class="row justify-content-center">
-             <h5 class="text-center">JWT and OAuth2. Should we reinvent the wheel?</h5>
+         <div class="row">
+           <div class="col align-self-center">
+             TBA
            </div>
          </div> 
 
-         <div class="col-sm">
-           <div class="row justify-content-center">
-             <img src="src/img/speakers/deividas.jpg" class="rounded-circle speaker-photo">
-           </div>
-           <div class="row justify-content-center mt-2">
-            <h4>Deividas Matačiūnas</h4>
-           </div>
-           <div class="row justify-content-center">
-             <h5 class="text-center">Fine-tuning large NLP models</h5>
-           </div>
-         </div> 
-        </div>
+      </div>
+    </div>
+    <div class="container mt-5 bg-white text-blue">
+      <div class="row">
+          <img class="block mx-auto" src="src/img/icons/NEWSLETTER-WEB.svg">
+      </div>
+      <div class="row justify-content-center newsletter">
+            <div class="col"></div>
+            <div class="col-5 my-auto">
+              <img class="float-left" src="src/img/icons/MAIL-ICO.svg">
+              <p class="pl-5">Subscribe to Our Newsletter</p>
+            </div>
+            <div class="col bg-dark rounded">
+              <a class="bg-dark" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">
+                <img class="bg-dark mt-2" src="src/img/icons/ARROW-ICO.svg"></a>
+            </div>
       </div>
 
-      <div class="row justify-content-center">
-       <div class="col-sm">
-         <div class="row justify-content-center">
-           <img src="src/img/speakers/simon.jpg" class="rounded-circle speaker-photo">
-         </div>
-         <div class="row justify-content-center mt-2">
-          <h4>Szymon Zaborowski</h4>
-         </div>
-         <div class="row justify-content-center">
-           <h5 class="text-center">Metric Learning for Session-Based Recommendations</h5>
-         </div>
-       </div> 
-
-       <div class="col-sm">
-         <div class="row justify-content-center">
-           <img src="src/img/speakers/sarunas.jpeg" class="rounded-circle speaker-photo">
-         </div>
-         <div class="row justify-content-center mt-2">
-          <h4>Šarūnas Navickas</h4>
-         </div>
-         <div class="row justify-content-center">
-           <h5 class="text-center">How to do Programming videos</h5>
-         </div>
-       </div> 
-
-       <div class="col-sm">
-         <div class="row justify-content-center">
-           <img src="src/img/speakers/jev.jpeg" class="rounded-circle speaker-photo">
-         </div>
-         <div class="row justify-content-center mt-2">
-          <h4>Jev Gamper</h4>
-         </div>
-         <div class="row justify-content-center">
-           <h5 class="text-center">Why care about experiments?</h5>
-         </div>
-       </div> 
-      </div>
-      </div>
     </div>
   </div>
 
   <!-- Location -->
-  <div class="container-fluid pt-5 pb-5 bg-dark text-light" id="location">
-    <div class="container">
-      <h2 class="font-weight-bold text-uppercase text-center pb-2">Location</h2>
-      <p class="text-center">Hotel Best Western, Konstitucijos pr. 14, Vilnius</p>
+  <div class="container-fluid pt-5 pb-5 bg-dark">
+    <div class="container shadow pb-5 bg-white text-blue" id="location">
+      <h2 class="font-weight-bold text-uppercase text-center pt-5">Location</h2>
+      <p class="text-center mt-3">Socialinių mokslų kolegija, Kalvarijų g. 137E, Vilnius</p>
       <div class="row justify-content-center">
-        <div class="col-sm-auto pb-2">
-          <img src="src/img/photos/sale1.jpg" class="img-thumbnail img-rounded img-fluid" alt="conference hall" /><br />
-          <img src="src/img/photos/sale2.jpg" class="img-thumbnail img-rounded img-fluid" alt="conference hall" />
-        </div>
         <div class="col-md-auto pt-1">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2305.865686374953!2d25.27574871601531!3d54.694391180584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd940409c8a3a9%3A0x4cd7cb2e497a8a33!2sBest%20Western%20Vilnius!5e0!3m2!1slt!2slt!4v1628768655512!5m2!1slt!2slt" max-width="500" height="388" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.59154718148!2d25.285170116016065!3d54.71680897887637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43df37d0dfde0269%3A0x97b079966e5212ec!2sSMK%20Socialini%C5%B3%20moksl%C5%B3%20kolegija!5e0!3m2!1slt!2slt!4v1644186507896!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
-  </div>
 
-
-
-  <!-- Photos -->
-  <div class="container-fluid" aria-labelledby="more-photos-heading">
-    <div class="row no-gutters">
-      <div class="col-4">
-        <img src="src/img/photos/1.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference opening speach" />
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/5.JPG" class="img-thumbnail img-rounded img-fluid" alt="queue for book signing" />
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/3.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference hall"/>
-      </div>
-    <div class="w-100">
-    </div>
-      <div class="col-4">
-        <img src="src/img/photos/4.JPG" class="img-thumbnail img-rounded img-fluid" alt="workshop atendees"/>
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/2.JPG" class="img-thumbnail img-rounded img-fluid" alt="Robert giving speach"/>
-      </div>
-      <div class="col-4">
-        <img src="src/img/photos/6.JPG" class="img-thumbnail img-rounded img-fluid" alt="conference audience"/>
-      </div>
-    </div>
-  </div>
-
-  <!-- Newsletter and Link -->
-  <div class="container-fluid pt-5 pb-5 bg-black text-light" id="contact">
-    <div class="container text-center">
-      <h2 class="font-weight-bold text-uppercase text-center pb-2">Never miss our event</h2>
-      <a class="btn btn-primary m-2 text-light font-weight-bold" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">Newsletter</a>
       <div class="row pt-5 justify-content-center">
         <div class="col-auto">
           <a href="https://www.facebook.com/PyConLT/"><img class="social-icon" src="src/img/icons/facebook.svg" /></a>
@@ -442,10 +287,12 @@
                   src="src/img/icons/youtube.svg" alt="YouTube" /></a>
       </div>
     </div>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://pycon.lt" aria-label="PyCon dot LT"> pycon.lt</a>
+    <div class="footer-copyright text-center text-white py-3">© 2020 Copyright:
+      <a href="https://pycon.lt" aria-label="PyCon dot LT" class="font-weight-bold text-white"> pycon.lt</a>
     </div>
-   </div>
+
+  </div>
+
 </body>
 
 </html>

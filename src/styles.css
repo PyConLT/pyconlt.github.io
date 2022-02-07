@@ -53,6 +53,23 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+//  .navbar .navbar-nav {
+//    display: inline-block;
+//    float: none;
+//    vertical-align: top;
+//  }
+//  .navbar .navbar-collapse {
+//    text-align: center;
+//  }
+
+}
+
+a.nav-link {
+  color: #3776aa !important;
+  font-weight: bold;
+}
+
 .bg-black {
   background-color: #000000;
 }
@@ -67,6 +84,14 @@ body {
 
 .bg-yellow {
   background-color: #fdb913;
+}
+
+.bg-red {
+  background-color: #C1272D;
+}
+
+.bg-green {
+  background-color: #006a44;
 }
 
 .blink {
@@ -85,14 +110,34 @@ body {
   }
 }
 
-body {
-  padding-top: 65px;
-}
-
 .keystone-logo {
   max-height: 350px;
 }
 
 .speaker-photo {
   max-height: 200px;
+}
+
+.flag-container > .row {
+  height: 5px;
+}
+
+#carouselExampleSlidesOnly {
+  z-index: -1;
+}
+
+#about {
+  margin-top: -150px;
+}
+
+#speakers {
+  margin-top: -70px;
+}
+
+#location {
+  margin-top: -80px;
+}
+
+.newsletter {
+  height: 70px;
 }
