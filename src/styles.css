@@ -111,7 +111,7 @@ a.nav-link {
 }
 
 .keystone-logo {
-  max-height: 350px;
+  max-height: 250px;
 }
 
 .speaker-photo {
@@ -127,7 +127,7 @@ a.nav-link {
 }
 
 #about {
-  margin-top: -150px;
+  margin-top: -5%;
 }
 
 #speakers {
@@ -140,4 +140,13 @@ a.nav-link {
 
 .newsletter {
   height: 70px;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
 }
