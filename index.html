@@ -175,8 +175,8 @@
       <button
         class="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
+        data-bs-toggle ="collapse"
+        data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -240,7 +240,7 @@
 
     <!-- Cover image -->
     <div class="cover-container">
-      <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -306,7 +306,7 @@
     </div>
 
     <!-- Speakers-->
-    <div id="speakers" class="container-fluid pt-5 pb-5 bg-white">
+    <div id="speakers" class="container-fluid pt-5  bg-white">
       <!-- <img
           class="pt-3 d-block mx-auto"
           src="src/img/gyvateles.png"
@@ -315,7 +315,7 @@
 
       <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
       <div class="d-flex justify-content-center p-2 flex-wrap">
-        <div class="card bg-light m-3">
+        <div class="card border-0 m-3 speaker">
           <img
             src="src/img/speakers/sebastian.jpg"
             class="rounded speaker-photo"
@@ -326,7 +326,7 @@
             <p class="card-text">Author of FastAPI</p>
           </div>
         </div>
-        <div class="card bg-light m-3">
+        <div class="card border-0 m-3 speaker">
           <img
             src="src/img/speakers/lukaszlanga.jpg"
             class="rounded speaker-photo"
@@ -339,7 +339,7 @@
             </p>
           </div>
         </div>
-        <div class="card bg-light m-3">
+        <div class="card border-0 m-3 speaker">
           <img
             src="src/img/speakers/andrej_baranovskij.jpg"
             class="rounded speaker-photo"
@@ -351,7 +351,7 @@
           </div>
         </div>
 
-        <div class="card bg-light m-3">
+        <div class="card border-0 m-3 speaker">
           <img
             src="src/img/speakers/james-powel.jpeg"
             class="rounded speaker-photo"
@@ -361,7 +361,7 @@
             <h5 class="card-title">James Powel</h5>
             <p class="card-text">
               Scientific computing, data science, quant finance, Python. Board
-              Chair @NumFOCUS . Known for: @PyData @NYCPython . Consulting &
+              Chair @NumFOCUS. Known for: @PyData @NYCPython . Consulting &
               training @dutc_training
             </p>
           </div>
@@ -369,36 +369,58 @@
       </div>
       <div class="container mt-5 bg-white text-blue">
         <div class="row justify-content-center newsletter">
-          <div class="col-sm-3 text-center">
-            <button
-              type="button"
-              class="btn bg-success btn-lg text-white"
-              href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
-            >
-              Subscribe to newsletter
-            </button>
-          </div>
+          <div class="col-sm-3 text-center"></div>
         </div>
       </div>
     </div>
 
-    <!-- Call for proposal / Future pretalx schedule place -->
-    <div class="container-fluid pt-5 pb-5 bg-dark">
-      <div class="container shadow pb-5 bg-white text-blue" id="cfp">
-        <img
-          class="py-3 d-block mx-auto"
-          src="src/img/gyvateles.png"
-          alt="snakes"
-        />
-        <div class="row justify-content-center newsletter">
-          <div class="col-sm-3 text-center">
-            <button
+    <div class="container px-4 py-1 " id="hanging-icons">
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div class="icon-square text-dark flex-shrink-0 me-3">
+            <i class="bi bi-alarm"></i>
+          </div>
+          <div>
+            <h2>Participate</h2>
+            <p>This will be great!</p>
+            <a
+              type="button"
+              class="btn bg-success btn-lg text-white"
+              href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
+              target="_blank"
+            >
+              Buy tickets
+          </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-mic me-3"></i>
+          <div>
+            <h2>For Speakers</h2>
+            <p>Share your you knowledge</p>
+            <p>Your talk will be recorded shared over the internet</p>
+            <p>Speakers receive free ticket</p>
+            <a
               type="button"
               class="btn bg-success btn-lg text-white"
               href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
             >
               Become a speaker
-            </button>
+          </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <i class="bi bi-envelope me-3"></i>
+          <div>
+            <h2>Newsletter</h2>
+            <p>Would you like to be be updated?</p>
+            <a
+              type="button"
+              class="btn bg-success btn-lg text-white"
+              href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
+            >
+              Subscribe to newsletter
+          </a>
           </div>
         </div>
       </div>
