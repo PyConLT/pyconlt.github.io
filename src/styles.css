@@ -53,7 +53,7 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 //  .navbar .navbar-nav {
 //    display: inline-block;
 //    float: none;
@@ -63,7 +63,7 @@ body {
 //    text-align: center;
 //  }
 
-}
+} */
 
 a.nav-link {
   color: #3776aa !important;
@@ -114,8 +114,8 @@ a.nav-link {
   max-height: 250px;
 }
 
-.speaker-photo {
-  max-height: 200px;
+#speakers .card {
+  max-width: 400px;
 }
 
 .flag-container > .row {

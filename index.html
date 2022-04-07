@@ -1,372 +1,529 @@
 <!DOCTYPE html>
 <html xml:lang="en" lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="src/img/favicon.png" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" href="src/img/favicon.png">
+    <title>PyCon Lithuania 2022 | Python and PyData Conference</title>
 
-  <title>PyCon Lithuania 2022 | Python and PyData Conference</title>
+    <!-- Google Search-->
+    <meta
+      name="description"
+      content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals."
+    />
+    <meta name="google" content="nositelinkssearchbox" />
 
-  <!-- Google Search-->
-  <meta name="description" content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals." />
-  <meta name="google" content="nositelinkssearchbox" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="PyCon Lithuania" />
-  <meta property="og:description" content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals." />
-  <!-- TODO: Use custom images for “shareable” pages (e.g., homepage, articles, etc.)
+    <!-- Open Graph -->
+    <meta property="og:title" content="PyCon Lithuania" />
+    <meta
+      property="og:description"
+      content="PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals."
+    />
+    <!-- TODO: Use custom images for “shareable” pages (e.g., homepage, articles, etc.)
   Use your logo or any other branded image for the rest of your pages.
   Use images with a 1.91:1 ratio and minimum recommended dimensions of 1200x630 for optimal clarity across all devices. -->
-  <!-- SVG are not supported -->
-  <meta property="og:image" content="https:/www.pycon.lt/src/img/cover-2022.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.pycon.lt" />
-  <meta property="og:locale" content="en_US" />
+    <!-- SVG are not supported -->
+    <meta
+      property="og:image"
+      content="https:/www.pycon.lt/src/img/cover-2022.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.pycon.lt" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- LD Json -->
-  <!-- https://search.google.com/test/rich-results -->
-  <script type='application/ld+json'>
-    {
-      "@context": "https://www.schema.org",
-      "@type": "Event",
-      "name": "PyCon Lithuania 2022",
-      "url": "https://www.pycon.lt",
-      "description": "PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals.",
-      "startDate": "05/26/2022 09:00AM",
-      "endDate": "05/27/2022 17:00PM",
-      "eventStatus": "EventScheduled",
-      "eventAttendanceMode": "OfflineEventAttendanceMode",
-      "image": "https://www.pycon.lt/src/img/cover_2022.png",
-      "location": {
-        "@type": "Place",
-        "name": "Socialinių mokslų kolegija",
-        "sameAs": "https://www.smk.lt/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Kalvarijų g. 137E, Vilnius",
-          "postalCode": "LT-08211",
-          "addressCountry": "Lithuania"
-        }
-      },
-      "organizer": {
-        "@type": "Organization",
-        "name": "PyCon Lithuania",
-        "url": "https://www.pycon.lt"
-      },
-      "performer": [
-        {
-          "@type": "Person",
-          "name": "Sebastián Ramírez",
-          "sameAs": "https://tiangolo.com/"
+    <!-- LD Json -->
+    <!-- https://search.google.com/test/rich-results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://www.schema.org",
+        "@type": "Event",
+        "name": "PyCon Lithuania 2022",
+        "url": "https://www.pycon.lt",
+        "description": "PyCon Lithuania is annual conference that brings together hundreds of Python and data enthusiasts and professionals.",
+        "startDate": "05/26/2022 09:00AM",
+        "endDate": "05/27/2022 17:00PM",
+        "eventStatus": "EventScheduled",
+        "eventAttendanceMode": "OfflineEventAttendanceMode",
+        "image": "https://www.pycon.lt/src/img/cover_2022.png",
+        "location": {
+          "@type": "Place",
+          "name": "Socialinių mokslų kolegija",
+          "sameAs": "https://www.smk.lt/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kalvarijų g. 137E, Vilnius",
+            "postalCode": "LT-08211",
+            "addressCountry": "Lithuania"
+          }
         },
-        {
-          "@type": "Person",
-          "name": "Łukasz Langa",
-          "sameAs": "https://lukasz.langa.pl/"
-        },     
-        {
-          "@type": "Person",
-          "name": "Andrej Baranovskij",
-          "sameAs": "https://twitter.com/andrejusb"
-        }
-      ]
-    }
+        "organizer": {
+          "@type": "Organization",
+          "name": "PyCon Lithuania",
+          "url": "https://www.pycon.lt"
+        },
+        "performer": [
+          {
+            "@type": "Person",
+            "name": "Sebastián Ramírez",
+            "sameAs": "https://tiangolo.com/"
+          },
+          {
+            "@type": "Person",
+            "name": "Łukasz Langa",
+            "sameAs": "https://lukasz.langa.pl/"
+          },
+          {
+            "@type": "Person",
+            "name": "Andrej Baranovskij",
+            "sameAs": "https://twitter.com/andrejusb"
+          },
+          {
+            "@type": "Person",
+            "name": "James Powel",
+            "sameAs": "https://twitter.com/dontusethiscode"
+          }
+        ],
 
-  </script>
-  <!-- TODO -->
-  <!-- Move this to schema after tickets released -->
-  <!-- 
-    "offers": {
-    "@type": "Offer",
-    "url": "https://tickets.paysera.com/lt/step/pycon-lithuania-2021-3465/select",
-    "price": "40",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/InStock",
-    "validFrom": "2021-01-20T16:00"
-  }
- -->
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Student ticket",
+            "url": "https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda",
+            "price": "35",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2022-04-07T16:00"
+          },
+          {
+            "@type": "Offer",
+            "name": "Regular ticket",
+            "url": "https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda",
+            "price": "50",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2022-04-07T16:00"
+          },
+          {
+            "@type": "Offer",
+            "name": "Corporate ticket",
+            "url": "https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda",
+            "price": "70",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "validFrom": "2022-04-07T16:00"
+          }
+        ]
+      }
+    </script>
 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T2GBD5M");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-T2GBD5M');</script>
-  <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/styles.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="src/styles.css">
+    <!-- JQuery: not required? -->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- JQuery: not required? -->
-  <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Popper -->
-  <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+    <script
+      type="text/javascript"
+      src="https://pretalx.com/pyconlt2020/schedule/widget/v2.en.js"
+    ></script>
+  </head>
 
-  <!-- Bootstrap -->
-  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img src="./src/img/logos/pycon2022.jpg" alt="python lt" />
+      </a>
 
-  <script type="text/javascript" src="https://pretalx.com/pyconlt2020/schedule/widget/v2.en.js"></script>
-</head>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list"></i>
+      </button>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2GBD5M" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">
-      <img src="./src/img/logos/pycon2022.jpg" alt="python lt">
-    </a>
-
-    <button class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center bg-white" id="navbarSupportedContent">
-      <ul class="nav navbar-nav pt-4">
-        <li class="nav-item active">
-          <a class="nav-link m-2" href="#" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="#speakers">Speakers</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="#cfp">CFP</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="#location">Location</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="#contact">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link m-2" href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda?fbclid=IwAR3dYOa83wLNhBofC5-AYX_YD-_oreZshUlcINF48yWYcUjCoHeeoo5H79A" target="_blank">Tickets</a>
-        </li>
-      </ul>
+      <div
+        class="collapse navbar-collapse justify-content-center bg-white"
+        id="navbarSupportedContent"
+      >
+        <ul class="nav navbar-nav pt-4">
+          <li class="nav-item active">
+            <a class="nav-link m-2" href="#" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#cfp">CFP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#location">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link m-2"
+              href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
+              target="_blank"
+              >Tickets</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
-  <div class="flag-container container-fluid">
-    <div class="row">
-      <div class="col-sm bg-yellow">
-      </div>
-      <div class="col-sm bg-green">
-      </div>
-      <div class="col-sm bg-red">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T2GBD5M"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="flag-container container-fluid">
+      <div class="row">
+        <div class="col-sm bg-yellow"></div>
+        <div class="col-sm bg-green"></div>
+        <div class="col-sm bg-red"></div>
       </div>
     </div>
-  </div>
 
-  <!-- Cover image -->
-  <div class="cover-container">
-    <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="src/img/cover-2022.png" alt="First slide">
+    <!-- Cover image -->
+    <div class="cover-container">
+      <div id="carouselExampleSlidesOnly" class="carousel" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="src/img/cover-2022-1920x-optimized.png"
+              alt="First slide"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- About -->
-  <div class="container-fluid pt-5 pb-5 bg-dark h-100">
-    <div class="container shadow bg-white text-blue h-100 pt-2" id="about">
-      <img class="pt-3 d-block mx-auto" src="src/img/gyvateles.png" alt="snakes">
-      <p class="text-center pt-4">PyCon LT is a community event that brings together new and experienced Python users
-      <p class="text-center">PyCon LT is organized since 2009.</p>
+    <!-- About -->
+    <div class="container-fluid pt-5 pb-5 bg-dark h-100">
+      <div class="container shadow bg-white text-blue h-100 pt-2" id="about">
+        <img
+          class="pt-3 d-block mx-auto"
+          src="src/img/gyvateles.png"
+          alt="snakes"
+        />
+        <p class="text-center pt-4">
+          PyCon LT is a community event that brings together new and experienced
+          Python users
+        </p>
+        <p class="text-center">PyCon LT is organized since 2009.</p>
 
         <h4 class="text-center font-weight-bold">Our goals:</h4>
         <div class="row text-center font-weight-bold">
           <div class="col-sm">
-            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-1.png" alt="snakes">
+            <img
+              class="py-2 d-block mx-auto"
+              src="src/img/icons/GOALS-1.png"
+              alt="snakes"
+            />
             <div class="col-sm p-4">
               Grow and support a community of Python users
             </div>
           </div>
           <div class="col-sm">
-            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-2.png" alt="snakes">
+            <img
+              class="py-2 d-block mx-auto"
+              src="src/img/icons/GOALS-2.png"
+              alt="snakes"
+            />
             <div class="col-sm p-4">
               Encourage learning and knowledge sharing
             </div>
           </div>
           <div class="col-sm">
-            <img class="py-2 d-block mx-auto" src="src/img/icons/GOALS-3.png" alt="snakes">
+            <img
+              class="py-2 d-block mx-auto"
+              src="src/img/icons/GOALS-3.png"
+              alt="snakes"
+            />
             <div class="col-sm p-4">
               Popularize Python tools/libraries and open source in general
             </div>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
+    <!-- Speakers-->
+    <div id="speakers" class="container-fluid pt-5 pb-5 bg-white">
+      <!-- <img
+          class="pt-3 d-block mx-auto"
+          src="src/img/gyvateles.png"
+          alt="snakes"
+        /> -->
 
-  <!-- Speakers-->
-  <div class="container-fluid pt-5 pb-5 bg-white">
-    <div class="container pb-5 shadow bg-white text-blue" id="speakers">
-      <img class="pt-3 d-block mx-auto" src="src/img/gyvateles.png" alt="snakes">
-        <div class="container">
-        <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
-
-        <div class="d-flex flex-fill flex-row overflow-auto justify-content-between">
-          <table class="table table-borderless text-blue">
-            <tbody>
-              <tr>
-                <td>
-                  <img src="src/img/speakers/sebastian.jpg" class="rounded speaker-photo d-block mx-auto">
-                </td>
-                <td>
-                  <img src="src/img/speakers/lukaszlanga.jpg" class="rounded speaker-photo d-block mx-auto">
-                </td>
-                <td>
-                  <img src="src/img/speakers/andrej_baranovskij.jpg" class="rounded speaker-photo d-block mx-auto">
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td>
-                  <p class="font-weight-bold">Sebastián Ramírez</p>
-                </td>
-                <td>
-                  <p class="font-weight-bold">Lukasz Langa</p>
-                </td>
-                <td>
-                  <p class="font-weight-bold">Andrej Baranovskij</p>
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td>
-                  <p>Author of FastAPI</p>
-                </td>
-                <td>
-                  <p>Creator of Black and Release Manager for Python 3.8 and 3.9</p>
-                </td>
-                <td>
-                  <p>Founder Katana ML and Red Samurai</p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+      <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
+      <div class="d-flex justify-content-center p-2 flex-wrap">
+        <div class="card bg-light m-3">
+          <img
+            src="src/img/speakers/sebastian.jpg"
+            class="rounded speaker-photo"
+            alt="Sebastian"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Sebastián Ramírez</h5>
+            <p class="card-text">Author of FastAPI</p>
+          </div>
+        </div>
+        <div class="card bg-light m-3">
+          <img
+            src="src/img/speakers/lukaszlanga.jpg"
+            class="rounded speaker-photo"
+            alt="Lukasz"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Lukasz Langa</h5>
+            <p class="card-text">
+              Creator of Black and Release Manager for Python 3.8 and 3.9
+            </p>
+          </div>
+        </div>
+        <div class="card bg-light m-3">
+          <img
+            src="src/img/speakers/andrej_baranovskij.jpg"
+            class="rounded speaker-photo"
+            alt="Andrej"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Andrej Baranovskij</h5>
+            <p class="card-text">Founder Katana ML and Red Samurai.</p>
+          </div>
         </div>
 
+        <div class="card bg-light m-3">
+          <img
+            src="src/img/speakers/james-powel.jpeg"
+            class="rounded speaker-photo"
+            alt="Andrej"
+          />
+          <div class="card-body">
+            <h5 class="card-title">James Powel</h5>
+            <p class="card-text">
+              Scientific computing, data science, quant finance, Python. Board
+              Chair @NumFOCUS . Known for: @PyData @NYCPython . Consulting &
+              training @dutc_training
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 bg-white text-blue">
+        <div class="row justify-content-center newsletter">
+          <div class="col-sm-3 text-center">
+            <button
+              type="button"
+              class="btn bg-success btn-lg text-white"
+              href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
+            >
+              Subscribe to newsletter
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container mt-5 bg-white text-blue">
-      <div class="row">
-          <img class="block mx-auto img-fluid" src="src/img/icons/NEWSLETTER-WEB.png">
-      </div>
-      <div class="row justify-content-center newsletter">
-            <div class="col-sm"></div>
-            <div class="col-5 my-auto">
-              <img class="float-left" src="src/img/icons/MAIL-ICO.png">
-              <p class="pl-5">Subscribe to Our Newsletter</p>
-            </div>
-            <div class="col bg-dark rounded">
-              <a class="bg-dark" href="https://mailchi.mp/33c3df7619af/pyconlt-2019">
-                <img class="bg-dark d-block mt-2" src="src/img/icons/ARROW-ICO.png"></a>
-            </div>
-      </div>
 
-    </div>
-  </div>
-
-  <!-- Call for proposal / Future pretalx schedule place -->
-  <div class="container-fluid pt-5 pb-5 bg-dark">
-    <div class="container shadow pb-5 bg-white text-blue" id="cfp">
-      <img class="py-3 d-block mx-auto" src="src/img/gyvateles.png" alt="snakes">
-      <div class="row m-2 font-weight-bold justify-content-center">
-        <div class="col-sm-5 text-center"><h3 class="pt-1 align-middle my-auto">Proposal submission is open</h3></div>
+    <!-- Call for proposal / Future pretalx schedule place -->
+    <div class="container-fluid pt-5 pb-5 bg-dark">
+      <div class="container shadow pb-5 bg-white text-blue" id="cfp">
+        <img
+          class="py-3 d-block mx-auto"
+          src="src/img/gyvateles.png"
+          alt="snakes"
+        />
+        <div class="row justify-content-center newsletter">
         <div class="col-sm-3 text-center">
-          <a type="button" class="btn bg-yellow btn-lg text-white" href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE">Become a speaker</a>
+          <button
+            type="button"
+            class="btn bg-success btn-lg text-white"
+            href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+          >
+            Become a speaker
+          </button>        </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Sponsors section -->
-  <div class="container-fluid pt-5 pb-5 bg-white">
-    <div class="container">
-      <h3 class="text-center my-2 font-weight-bold text-blue">PyCon LT 2022 Sponsors</h3>
-      <div class="row">
-        <div class="col-sm">
-          <div class="col-sm text-center text-blue font-weight-bold">
-            <h4 class="mt-2">Keystone Sponsors:</h4>
-          </div>
-          <a href="https://www.cornercasetech.com/">
-            <img class="mx-auto keystone-logo d-block mt-3" src="src/img/logos/CCT_logo.jpg" alt="Corner Case Technologies Logo">
-          </a>
-        </div>
-        <div class="col-sm text-center text-blue font-weight-bold">
-          <div class="col-sm text-center text-blue font-weight-bold">
-            <h4 class="mt-2">Gold Sponsors:</h4>
-          </div>
-          <a href="https://www.visma.lt/">
-            <img class="d-block mx-auto" src="src/img/logos/visma-logo-small.png" alt="Visma Logo">
-          </a>
-          <a href="https://www.convious.com/">
-            <img class="d-block mx-auto mt-3" src="src/img/logos/red.png" alt="Convious Logo">
-          </a>
-          <a href="https://revelsystems.com/">
-            <img class="d-block mx-auto" src="src/img/logos/revel-systems.png" alt="RevelSystems Logo">
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Location -->
-  <div class="container-fluid pt-5 pb-5 bg-dark">
-    <div class="container shadow pb-5 bg-white text-blue" id="location">
-      <h2 class="font-weight-bold text-uppercase text-center pt-5">Location</h2>
-      <p class="text-center mt-3">Socialinių mokslų kolegija, Kalvarijų g. 137E, Vilnius</p>
-      <div class="row justify-content-center">
-        <div class="col-md-auto pt-1">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.59154718148!2d25.285170116016065!3d54.71680897887637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43df37d0dfde0269%3A0x97b079966e5212ec!2sSMK%20Socialini%C5%B3%20moksl%C5%B3%20kolegija!5e0!3m2!1slt!2slt!4v1644186507896!5m2!1slt!2slt" max-width="600" max-height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- Sponsors section -->
+    <div class="container-fluid pt-5 pb-5 bg-white">
+      <div class="container">
+        <h3 class="text-center my-2 font-weight-bold text-blue">
+          PyCon LT 2022 Sponsors
+        </h3>
+        <div class="row">
+          <div class="col-sm">
+            <div class="col-sm text-center text-blue font-weight-bold">
+              <h4 class="mt-2">Keystone Sponsors:</h4>
+            </div>
+            <a href="https://www.cornercasetech.com/">
+              <img
+                class="mx-auto keystone-logo d-block mt-3"
+                src="src/img/logos/CCT_logo.jpg"
+                alt="Corner Case Technologies Logo"
+              />
+            </a>
+          </div>
+          <div class="col-sm text-center text-blue font-weight-bold">
+            <div class="col-sm text-center text-blue font-weight-bold">
+              <h4 class="mt-2">Gold Sponsors:</h4>
+            </div>
+            <a href="https://www.visma.lt/">
+              <img
+                class="d-block mx-auto"
+                src="src/img/logos/visma-logo-small.png"
+                alt="Visma Logo"
+              />
+            </a>
+            <a href="https://www.convious.com/">
+              <img
+                class="d-block mx-auto mt-3"
+                src="src/img/logos/convious.png"
+                alt="Convious Logo"
+              />
+            </a>
+            <a href="https://revelsystems.com/">
+              <img
+                class="d-block mx-auto"
+                src="src/img/logos/revel-systems.png"
+                alt="RevelSystems Logo"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Location -->
+    <div class="container-fluid pt-5 pb-5 bg-dark">
+      <div class="container shadow pb-5 bg-white text-blue" id="location">
+        <h2 class="font-weight-bold text-uppercase text-center pt-5">
+          Location
+        </h2>
+        <p class="text-center mt-3">
+          Socialinių mokslų kolegija, Kalvarijų g. 137E, Vilnius
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-auto pt-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2304.59154718148!2d25.285170116016065!3d54.71680897887637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43df37d0dfde0269%3A0x97b079966e5212ec!2sSMK%20Socialini%C5%B3%20moksl%C5%B3%20kolegija!5e0!3m2!1slt!2slt!4v1644186507896!5m2!1slt!2slt"
+              max-width="600"
+              max-height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
 
       <div class="row pt-5 justify-content-center">
         <div class="col-auto">
-          <a href="https://www.facebook.com/PyConLT/"><img class="social-icon" src="src/img/icons/FB-ICO.png" /></a>
+          <a href="https://www.facebook.com/PyConLT/"
+            ><img class="social-icon" src="src/img/icons/FB-ICO.png"
+          /></a>
         </div>
         <div class="col-auto">
-          <a href="https://twitter.com/PyConLT"><img class="social-icon" src="src/img/icons/TWIT-ICO.png" /></a>
+          <a href="https://twitter.com/PyConLT"
+            ><img class="social-icon" src="src/img/icons/TWIT-ICO.png"
+          /></a>
         </div>
         <div class="col-auto">
-          <a href="https://www.meetup.com/vilniuspy/"><img class="social-icon" src="src/img/icons/MEET-ICO.png" /></a>
+          <a href="https://www.meetup.com/vilniuspy/"
+            ><img class="social-icon" src="src/img/icons/MEET-ICO.png"
+          /></a>
         </div>
         <div>
-          <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"><img class="social-icon"
-                  src="src/img/icons/YT-ICO.png" alt="YouTube" /></a>
+          <a href="https://www.youtube.com/channel/UC0gok3jorWcw0poOqmzVW5g"
+            ><img
+              class="social-icon"
+              src="src/img/icons/YT-ICO.png"
+              alt="YouTube"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-copyright text-center text-white py-3">
+        © 2022 Copyright:
+        <a
+          href="https://pycon.lt"
+          aria-label="PyCon dot LT"
+          class="font-weight-bold text-white"
+        >
+          pycon.lt</a
+        >
       </div>
     </div>
-    <div class="footer-copyright text-center text-white py-3">© 2022 Copyright:
-      <a href="https://pycon.lt" aria-label="PyCon dot LT" class="font-weight-bold text-white"> pycon.lt</a>
-    </div>
 
-  </div>
-
-</body>
-
+    <!-- Bootstrap -->
+    <script
+      defer
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
