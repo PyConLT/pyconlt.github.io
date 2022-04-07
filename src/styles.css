@@ -150,3 +150,7 @@ a.nav-link {
 .table-borderless > thead > tr > th {
     border: none;
 }
+img {
+  height: auto;
+  width: 100%;
+}
