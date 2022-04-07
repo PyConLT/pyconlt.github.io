@@ -115,7 +115,7 @@ a.nav-link {
 }
 
 #speakers .card {
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .flag-container > .row {
@@ -138,6 +138,9 @@ a.nav-link {
   margin-top: -80px;
 }
 
+.bi {
+  font-size: 2rem;
+}
 
 .carousel-item img {
   height: auto;
