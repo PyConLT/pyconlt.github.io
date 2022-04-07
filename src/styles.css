@@ -138,19 +138,8 @@ a.nav-link {
   margin-top: -80px;
 }
 
-.newsletter {
-  height: 70px;
-}
 
-.table-borderless > tbody > tr > td,
-.table-borderless > tbody > tr > th,
-.table-borderless > tfoot > tr > td,
-.table-borderless > tfoot > tr > th,
-.table-borderless > thead > tr > td,
-.table-borderless > thead > tr > th {
-    border: none;
-}
-img {
+.carousel-item img {
   height: auto;
   width: 100%;
 }
