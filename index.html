@@ -320,11 +320,16 @@
       <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
       <div class="d-flex flex-wrap justify-content-center p-2">
         <div class="card border-0 m-3 speaker">
-          <img
-            src="src/img/speakers/sebastian.jpg"
-            class="card-img-top rounded speaker-photo"
-            alt="Sebastian"
-          />
+          <picture>
+            <source srcset="src/img/speakers/sebastian.jpg" media="screen" type="image/webp">
+            <source srcset="src/img/speakers/sebastian.jpg" media="screen" type="image/jpeg">
+             <img
+                src="src/img/speakers/sebastian.jpg"
+                class="img-fluid img-thumbnail"
+                alt="Sebastian"
+            />
+          </picture>
+
           <div class="card-body">
             <h5 class="card-title">Sebastián Ramírez</h5>
             <p class="card-text">Author of FastAPI</p>
