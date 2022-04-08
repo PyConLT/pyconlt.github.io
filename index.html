@@ -182,7 +182,7 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">
-        <img height="100" src="src/img/logos/pycon.svg" alt="PyCon LT" />
+        <img height="100" src="src/img/logos/pyconlt.svg" class="mx-5" alt="PyCon LT" />
       </a>
 
       <button
@@ -272,8 +272,8 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid pt-5 pb-5 bg-dark h-100">
-      <div class="container shadow bg-white text-blue h-100 pt-2" id="about">
+    <div class="container-fluid pt-5 bg-dark">
+      <div class="container shadow bg-white text-blue pt-2" id="about">
         <img
           class="pt-3 d-block mx-auto"
           src="src/img/gyvateles.png"
@@ -299,7 +299,7 @@
           </div>
           <div class="col-sm">
             <img
-              class="py-2 d-block mx-auto"
+              class="d-block mx-auto"
               src="src/img/icons/learn.svg"
               alt="snakes"
             />
@@ -309,7 +309,7 @@
           </div>
           <div class="col-sm">
             <img
-              class="py-2 d-block mx-auto"
+              class="py-3 d-block mx-auto"
               src="src/img/icons/love.svg"
               alt="snakes"
             />
@@ -322,126 +322,125 @@
     </div>
 
     <!-- Speakers-->
-    <div id="speakers" class="container-fluid pt-5 bg-white">
-      <!-- <img
+    <div id="speakers" class="container-fluid bg-white py-5">
+      <div class="container-sm pb-5 shadow bg-white text-blue">
+        <img
           class="pt-3 d-block mx-auto"
           src="src/img/gyvateles.png"
           alt="snakes"
-        /> -->
-
-      <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
-      <div class="d-flex flex-wrap justify-content-center p-2">
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/sebastian.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/sebastian.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/sebastian.jpg "
-              class="card-img-top"
-              alt="Sebastian"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Sebastián Ramírez</h5>
-            <p class="card-text">Author of FastAPI</p>
+        />
+        <h4 class="text-center pt-2 font-weight-bold text-blue">Keynote Speakers</h4>
+        <div class="d-flex flex-wrap justify-content-center p-2">
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/sebastian.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/sebastian.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/sebastian.jpg "
+                class="card-img-top"
+                alt="Sebastian"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Sebastián Ramírez</h5>
+              <p class="card-text">Author of FastAPI</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/lukaszlanga.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/lukaszlanga.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/lukaszlanga.jpg"
-              class="card-img-top"
-              alt="Lukasz"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Lukasz Langa</h5>
-            <p class="card-text">
-              Creator of Black and Release Manager for Python 3.8 and 3.9
-            </p>
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/lukaszlanga.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/lukaszlanga.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/lukaszlanga.jpg"
+                class="card-img-top"
+                alt="Lukasz"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Lukasz Langa</h5>
+              <p class="card-text">
+                Creator of Black and Release Manager for Python 3.8 and 3.9
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/andrej_baranovskij.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/andrej_baranovskij.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/andrej_baranovskij.jpg"
-              class="card-img-top"
-              alt="Lukasz Langa"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Andrej Baranovskij</h5>
-            <p class="card-text">Founder Katana ML and Red Samurai.</p>
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/andrej_baranovskij.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/andrej_baranovskij.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/andrej_baranovskij.jpg"
+                class="card-img-top"
+                alt="Lukasz Langa"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Andrej Baranovskij</h5>
+              <p class="card-text">Founder Katana ML and Red Samurai.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/james-powel.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/james-powel.jpeg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/james-powel.jpeg"
-              class="card-img-top"
-              alt="James Powel"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">James Powel</h5>
-            <p class="card-text">
-              Scientific computing, data science, quant finance, Python. Board
-              Chair @NumFOCUS. Known for: @PyData @NYCPython . Consulting &
-              training @dutc_training
-            </p>
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/james-powel.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/james-powel.jpeg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/james-powel.jpeg"
+                class="card-img-top"
+                alt="James Powel"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">James Powel</h5>
+              <p class="card-text">
+                Scientific computing, data science, quant finance, Python. Board
+                Chair @NumFOCUS. Known for: @PyData @NYCPython . Consulting &
+                training @dutc_training
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container-sm" id="actions">
-      <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
+    <div class="container-fluid bg-dark" id="actions">
+      <div class="row g-5 py-5 row-cols-1 row-cols-lg-3 text-white">
         <div class="col d-flex align-items-start">
-          <div class="icon-square text-dark flex-shrink-0 me-3">
-            <i class="bi bi-alarm"></i>
-          </div>
-          <div>
+            <i class="bi bi-alarm me-3"></i>
+          <div class="text-center">
             <h2>Participate</h2>
             <p>This will be great!</p>
             <a
@@ -517,7 +516,7 @@
             <a href="https://www.convious.com/">
               <img
                 class="d-block mx-auto mt-3"
-                src="src/img/logos/convious.png"
+                src="src/img/logos/Convious_logo.svg"
                 alt="Convious Logo"
               />
             </a>
