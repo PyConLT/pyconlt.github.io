@@ -169,7 +169,7 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">
-        <img src="./src/img/logos/pycon2022.jpg" alt="python lt" />
+        <img height="100" src="src/img/logos/pycon.svg" alt="PyCon LT" />
       </a>
 
       <button
@@ -189,9 +189,6 @@
         id="navbarSupportedContent"
       >
         <ul class="nav navbar-nav pt-4">
-          <li class="nav-item active">
-            <a class="nav-link m-2" href="#" aria-current="page">Home</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link m-2" href="#about">About</a>
           </li>
@@ -199,17 +196,19 @@
             <a class="nav-link m-2" href="#speakers">Speakers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link m-2" href="#cfp">CFP</a>
+            <a
+              class="nav-link m-2"
+              href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+              target="_blank"
+              >Call for proposals</a
+            >
           </li>
           <li class="nav-item">
             <a class="nav-link m-2" href="#location">Location</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link m-2" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
             <a
-              class="nav-link m-2"
+              class="btn btn-primary pop m-2"
               href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
               target="_blank"
               >Tickets</a
@@ -321,31 +320,46 @@
       <div class="d-flex flex-wrap justify-content-center p-2">
         <div class="card border-0 m-3 speaker">
           <picture>
-            <source srcset="src/img/speakers/sebastian.webp" media="screen" type="image/webp">
-            <source srcset="src/img/speakers/sebastian.jpg" media="screen" type="image/jpeg">
-             <img
-                src="src/img/speakers/sebastian.jpg"
-                class="img-fluid img-thumbnail"
-                alt="Sebastian"
+            <source
+              srcset="src/img/speakers/sebastian.webp"
+              media="screen"
+              type="image/webp"
+            />
+            <source
+              srcset="src/img/speakers/sebastian.jpg"
+              media="screen"
+              type="image/jpeg"
+            />
+            <img
+              src="src/img/speakers/sebastian.jpg "
+              class="card-img-top"
+              alt="Sebastian"
             />
           </picture>
-
           <div class="card-body">
             <h5 class="card-title">Sebastián Ramírez</h5>
             <p class="card-text">Author of FastAPI</p>
           </div>
         </div>
+
         <div class="card border-0 m-3 speaker">
           <picture>
-            <source srcset="src/img/speakers/lukaszlanga.webp" media="screen" type="image/webp">
-            <source srcset="src/img/speakers/lukaszlanga.jpg" media="screen" type="image/jpeg">
+            <source
+              srcset="src/img/speakers/lukaszlanga.webp"
+              media="screen"
+              type="image/webp"
+            />
+            <source
+              srcset="src/img/speakers/lukaszlanga.jpg"
+              media="screen"
+              type="image/jpeg"
+            />
             <img
-            src="src/img/speakers/lukaszlanga.jpg"
-            class="card-img-bottom rounded speaker-photo"
-            alt="Lukasz"
-          />
+              src="src/img/speakers/lukaszlanga.jpg"
+              class="card-img-top"
+              alt="Lukasz"
+            />
           </picture>
-          
           <div class="card-body">
             <h5 class="card-title">Lukasz Langa</h5>
             <p class="card-text">
@@ -353,17 +367,25 @@
             </p>
           </div>
         </div>
+
         <div class="card border-0 m-3 speaker">
           <picture>
-            <source srcset="src/img/speakers/andrej_baranovskij.webp" media="screen" type="image/webp">
-            <source srcset="src/img/speakers/andrej_baranovskij.jpg" media="screen" type="image/jpeg">
+            <source
+              srcset="src/img/speakers/andrej_baranovskij.webp"
+              media="screen"
+              type="image/webp"
+            />
+            <source
+              srcset="src/img/speakers/andrej_baranovskij.jpg"
+              media="screen"
+              type="image/jpeg"
+            />
             <img
-            src="src/img/speakers/andrej_baranovskij.jpg"
-            class="card-img-bottom rounded speaker-photo"
-            alt="Lukasz"
-          />
+              src="src/img/speakers/andrej_baranovskij.jpg"
+              class="card-img-top"
+              alt="Lukasz Langa"
+            />
           </picture>
-
           <div class="card-body">
             <h5 class="card-title">Andrej Baranovskij</h5>
             <p class="card-text">Founder Katana ML and Red Samurai.</p>
@@ -372,13 +394,21 @@
 
         <div class="card border-0 m-3 speaker">
           <picture>
-            <source srcset="src/img/speakers/james-powel.webp" media="screen" type="image/webp">
-            <source srcset="src/img/speakers/james-powel.jpeg" media="screen" type="image/jpeg">
+            <source
+              srcset="src/img/speakers/james-powel.webp"
+              media="screen"
+              type="image/webp"
+            />
+            <source
+              srcset="src/img/speakers/james-powel.jpeg"
+              media="screen"
+              type="image/jpeg"
+            />
             <img
-            src="src/img/speakers/james-powel.jpeg"
-            class="card-img-bottom rounded speaker-photo"
-            alt="Andrej"
-          />
+              src="src/img/speakers/james-powel.jpeg"
+              class="card-img-top"
+              alt="James Powel"
+            />
           </picture>
           <div class="card-body">
             <h5 class="card-title">James Powel</h5>
@@ -392,8 +422,8 @@
       </div>
     </div>
 
-    <div class="container px-4 py-1" id="hanging-icons">
-      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="container-sm" id="actions">
+      <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
           <div class="icon-square text-dark flex-shrink-0 me-3">
             <i class="bi bi-alarm"></i>
@@ -402,7 +432,6 @@
             <h2>Participate</h2>
             <p>This will be great!</p>
             <a
-              type="button"
               class="btn bg-success btn-lg text-white"
               href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
               target="_blank"
@@ -419,7 +448,6 @@
             <p>Your talk will be recorded shared over the internet</p>
             <p>Speakers receive free ticket</p>
             <a
-              type="button"
               class="btn bg-success btn-lg text-white"
               href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
             >
@@ -433,11 +461,10 @@
             <h2>Newsletter</h2>
             <p>Would you like to be be updated?</p>
             <a
-              type="button"
               class="btn bg-success btn-lg text-white"
               href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
             >
-              Subscribe to newsletter
+              Subscribe
             </a>
           </div>
         </div>
