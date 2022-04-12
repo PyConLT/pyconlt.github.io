@@ -226,6 +226,7 @@
               class="btn btn-primary pop m-2"
               href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
               target="_blank"
+              onclick="onClickTickets()"
               >Tickets</a
             >
           </li>
@@ -450,6 +451,7 @@
               class="btn bg-success btn-lg text-white"
               href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
               target="_blank"
+              onclick="onClickTickets()"
             >
               Buy tickets
             </a>
@@ -602,5 +604,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const onClickTickets = () => {
+        fbq("track", "InitiateCheckout");
+      };
+    </script>
   </body>
 </html>
