@@ -37,6 +37,13 @@ const parseTalks = (data) => {
     return row;
   });
   lis.forEach((row) => tbody.appendChild(row));
+  const row = document.createElement("tr");
+  const td1 = document.createElement("td");
+  td1.textContent = "Updated every day!";
+  td1.setAttribute("colspan", "2");
+  row.appendChild(td1);
+  row.textContent
+  tbody.appendChild(row);
   table.appendChild(tbody);
 };
 
