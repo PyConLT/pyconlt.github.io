@@ -184,54 +184,62 @@
 
   <body>
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
-        <img height="100" src="src/img/logos/pycon.svg" alt="PyCon LT" />
-      </a>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            height="100"
+            src="src/img/logos/pycon.svg"
+            alt="PyCon LT"
+            class="m-n5"
+          />
+        </a>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="bi bi-list"></i>
-      </button>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list"></i>
+        </button>
 
-      <div
-        class="collapse navbar-collapse justify-content-center bg-white"
-        id="navbarSupportedContent"
-      >
-        <ul class="nav navbar-nav pt-4">
-          <li class="nav-item">
-            <a class="nav-link m-2" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link m-2" href="#speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link m-2"
-              href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
-              target="_blank"
-              >Call for proposals</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link m-2" href="#location">Location</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="btn btn-primary pop m-2"
-              href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
-              target="_blank"
-              onclick="onClickTickets()"
-              >Tickets</a
-            >
-          </li>
-        </ul>
+        <div
+          class="collapse navbar-collapse justify-content-center bg-white"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav navbar-nav pt-4">
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link m-2"
+                href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+                target="_blank"
+                onclick="onClickBecomeSpeaker()"
+                >Call for proposals</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="#location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-primary pop m-2"
+                href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
+                target="_blank"
+                onclick="onClickTickets()"
+                >Tickets</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -254,23 +262,51 @@
       </div>
     </div>
 
-    <!-- Cover image -->
-    <div class="cover-container">
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block"
-              src="src/img/cover-2022-1920x-optimized.png"
-              alt="First slide"
-              width="1920"
-              height="931"
-            />
-          </div>
+    <!-- Hero -->
+    <div class="text-center border-bottom">
+      <div>
+        <div class="container px-5">
+          <img
+            src="src/img/cover-2022-1920x-optimized.png"
+            class="img-fluid"
+            alt="Example image"
+            width="1920"
+            height="1080"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          PyCon Lithuania is annual conference that brings together hundreds of
+          Python and data enthusiasts and professionals.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a
+            role="button"
+            class="btn btn-primary btn-lg px-4"
+            href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
+            target="_blank"
+            onclick="onClickTickets()"
+            >Get Tickets</a
+          >
+
+          <a
+            role="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+            target="_blank"
+            onclick="onClickBecomeSpeaker()"
+            >Become a speaker</a
+          >
+          <a
+            role="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            href="https://forms.gle/SNHEjyorRXLvUqda7"
+            target="_blank"
+            onclick="onClickBecomePartner()"
+            >Become a partner</a
+          >
         </div>
       </div>
     </div>
@@ -548,6 +584,7 @@
             <a
               class="btn bg-success btn-lg text-white"
               href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+              onclick="onClickBecomeSpeaker()"
             >
               Become a speaker
             </a>
@@ -688,6 +725,12 @@
     <script>
       const onClickTickets = () => {
         fbq("track", "InitiateCheckout");
+      };
+      const onClickBecomeSpeaker = () => {
+        fbq("trackCustom", "onClickBecomeSpeaker");
+      };
+      const onClickBecomePartner = () => {
+        fbq("trackCustom", "onClickBecomePartner");
       };
     </script>
   </body>
