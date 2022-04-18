@@ -235,8 +235,8 @@
                 href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
                 target="_blank"
                 onclick="onClickTickets()"
-                >Tickets</a
-              >
+                >Tickets
+                </a>
             </li>
           </ul>
         </div>
@@ -276,43 +276,42 @@
           />
         </div>
       </div>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">
+      <div class="col-lg-6 pb-3 mx-auto px-2">
+        <p class="lead mb-4 text-blue">
           PyCon Lithuania is annual conference that brings together hundreds of
           Python and data enthusiasts and professionals.
         </p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
           <a
             role="button"
-            class="btn btn-primary btn-lg px-4"
+            class="btn btn-success btn-lg px-4"
             href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
             target="_blank"
             onclick="onClickTickets()"
-            >Get Tickets</a
-          >
-
+            >Get Tickets
+          </a>
           <a
             role="button"
-            class="btn btn-outline-secondary btn-lg px-4"
+            class="btn btn-warning btn-lg px-4 text-white"
             href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
             target="_blank"
             onclick="onClickBecomeSpeaker()"
-            >Become a speaker</a
-          >
+            >Become a speaker
+          </a>
           <a
             role="button"
-            class="btn btn-outline-secondary btn-lg px-4"
+            class="btn btn-outline-danger btn-lg px-4"
             href="https://forms.gle/SNHEjyorRXLvUqda7"
             target="_blank"
             onclick="onClickBecomePartner()"
-            >Become a partner</a
-          >
+            >Become a partner
+          </a>
         </div>
       </div>
     </div>
 
     <!-- About -->
-    <div class="container-fluid pt-5 pb-5 bg-dark h-100">
+    <div class="container-fluid py-5 bg-dark">
       <div class="container shadow bg-white text-blue h-100 pt-2" id="about">
         <img
           class="pt-3 d-block mx-auto"
@@ -366,173 +365,243 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Tracks -->
-    <div class="container-sm" id="tracks">
-      <h2 class="text-center pt-2 font-weight-bold">Tracks</h2>
-      <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div>
-            <h3>Python</h3>
-            <p>
-              PyCon Lithuania is about Python programming language, it's
-              ecosystem, tooling, applications.
-            </p>
-            <p>
-              You can expect anything in this track. Talks about best practices,
-              libraries, frameworks, solution; applications in Web Development,
-              Devops, Security, Sience and more.
-            </p>
+      <!-- Tracks -->
+      <div class="container mb-2 mt-5" id="tracks">
+        <h2 class="text-center pt-2 font-weight-bold text-white">Tracks</h2>
+        <div class="card-group border border-light text-white">
+          <div class="card bg-dark text-center">
+            <div class="card-body">
+              <h3 class="card-title">Python</h3>
+              <p class="card-text">
+                PyCon Lithuania is about Python programming language, it's
+                ecosystem, tooling, applications.
+              </p>
+              <p class="card-text">
+                You can expect anything in this track. Talks about best practices,
+                libraries, frameworks, solution; applications in Web Development,
+                Devops, Security, Sience and more.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div>
-            <h3>
-              <img
-                style="display: inline-block; height: 2em"
-                alt="PyData"
-                src="https://asset.brandfetch.io/idqV96bf53/idTBArboFk.png"
-              />
-            </h3>
-            <p>
-              PyData is a community for developers and users of open source data
-              tools. On meetup.com platform PyData is in 68 countries, has 198
-              groups and 191227 member.
-            </p>
-            <p>
-              You can expect talks about data analysis, science, ML engineering,
-              ETL pipelines and so on.
-              <a href="https://pydata.org/">More</a>
-            </p>
+          <div class="card bg-dark text-center">
+            <div class="card-body">
+              <h3 class="card-title">
+                <img
+                  style="display: inline-block; height: 2em"
+                  alt="PyData"
+                  src="https://asset.brandfetch.io/idqV96bf53/idTBArboFk.png"
+                />
+              </h3>
+              <p class="card-text">
+                PyData is a community for developers and users of open source data
+                tools. On meetup.com platform PyData is in 68 countries, has 198
+                groups and 191227 member.
+              </p>
+              <p class="card-text">
+                You can expect talks about data analysis, science, ML engineering,
+                ETL pipelines and so on.
+                <a href="https://pydata.org/" class="text-warning">More</a>
+              </p>
+              <div class="card-footer text-white">
+                <small class="text-white text-start">Sponsored by:
+                </small>
+                  <img class="border-0 bg-dark w-50 d-block mx-auto" src="src/img/logos/Oxylabs_Logo_Dark.png"/>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <div>
-            <h3>Education Summit</h3>
-            <p>
-              Newest addition to PyCon LT, Education summit welcomes everyone
-              who are interested in using Python for education purposes. We
-              promote use of Python in secondary and higher education settings.
-            </p>
-            <p>
-              All secondary education students and teacher are welcome to PyCon
-              Lithuania for free!
-            </p>
-          </div>
+            <div class="card bg-dark text-center">
+              <div class="card-body">
+                <h3 class="class-title">Education Summit</h3>
+                <p class="card-text">
+                  Newest addition to PyCon LT, Education summit welcomes everyone
+                  who are interested in using Python for education purposes. We
+                  promote use of Python in secondary and higher education settings.
+                </p>
+                <p class="card-text">
+                  All secondary education students and teacher are welcome to PyCon
+                  Lithuania for free!
+                </p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
 
     <!-- Speakers-->
-    <div id="speakers" class="container-fluid pt-5 bg-white">
+    <div id="speakers" class="container-fluid mt-3 pb-5 bg-white">
       <!-- <img
           class="pt-3 d-block mx-auto"
           src="src/img/gyvateles.png"
           alt="snakes"
         /> -->
 
-      <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
-      <div class="d-flex flex-wrap justify-content-center p-2">
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/sebastian.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/sebastian.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/sebastian.jpg "
-              class="card-img-top"
-              alt="Sebastian"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Sebastián Ramírez</h5>
-            <p class="card-text">Author of FastAPI</p>
+      <div class="container shadow pb-5 pt-2 bg-white text-blue">
+        <h4 class="text-center pt-2 font-weight-bold">Keynote Speakers</h4>
+        <div class="d-flex flex-wrap justify-content-center p-2">
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/sebastian.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/sebastian.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/sebastian.jpg "
+                class="card-img-top"
+                alt="Sebastian"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Sebastián Ramírez</h5>
+              <p class="card-text">Author of FastAPI</p>
+            </div>
+          </div>
+
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/lukaszlanga.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/lukaszlanga.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/lukaszlanga.jpg"
+                class="card-img-top"
+                alt="Lukasz"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Lukasz Langa</h5>
+              <p class="card-text">
+                Creator of Black and Release Manager for Python 3.8 and 3.9
+              </p>
+            </div>
+          </div>
+
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/andrej_baranovskij.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/andrej_baranovskij.jpg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/andrej_baranovskij.jpg"
+                class="card-img-top"
+                alt="Lukasz Langa"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">Andrej Baranovskij</h5>
+              <p class="card-text">Founder Katana ML and Red Samurai.</p>
+            </div>
+          </div>
+
+          <div class="card border-0 m-3 speaker">
+            <picture>
+              <source
+                srcset="src/img/speakers/james-powel.webp"
+                media="screen"
+                type="image/webp"
+              />
+              <source
+                srcset="src/img/speakers/james-powel.jpeg"
+                media="screen"
+                type="image/jpeg"
+              />
+              <img
+                src="src/img/speakers/james-powel.jpeg"
+                class="card-img-top"
+                alt="James Powel"
+              />
+            </picture>
+            <div class="card-body">
+              <h5 class="card-title">James Powel</h5>
+              <p class="card-text">
+                Scientific computing, data science, quant finance, Python. Board
+                Chair @NumFOCUS. Known for: @PyData @NYCPython . Consulting &
+                training @dutc_training
+              </p>
+            </div>
           </div>
         </div>
-
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/lukaszlanga.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/lukaszlanga.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/lukaszlanga.jpg"
-              class="card-img-top"
-              alt="Lukasz"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Lukasz Langa</h5>
-            <p class="card-text">
-              Creator of Black and Release Manager for Python 3.8 and 3.9
-            </p>
+      </div>
+      <!-- Actions -->
+      <div class="container-sm mt-5" id="actions">
+        <div class="row">
+          <div class="col-sm-4 ">
+             <div class="card border-0 text-center">
+              <div class="card-body">
+                <h2 class="card-title">
+                  <i class="bi bi-alarm"></i>
+                  Participate</h2>
+                <p class="card-text">This will be great!</p>
+                <a
+                  class="btn bg-success btn-lg text-white"
+                  href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
+                  target="_blank"
+                  onclick="onClickTickets()"
+                >
+                  Buy tickets
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/andrej_baranovskij.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/andrej_baranovskij.jpg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/andrej_baranovskij.jpg"
-              class="card-img-top"
-              alt="Lukasz Langa"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">Andrej Baranovskij</h5>
-            <p class="card-text">Founder Katana ML and Red Samurai.</p>
+          <div class="col-sm-4">
+             <div class="card border-0 text-center">
+              <div class="card-body">
+                  <h2 class="card-title">
+                    <i class="bi bi-mic"></i>
+                    For Speakers</h2>
+                  <div class="card-text">
+                    <p>Share your you knowledge</p>
+                    <p>Your talk will be recorded shared over the internet</p>
+                    <p>Speakers receive free ticket</p>
+                    <a
+                      class="btn bg-success btn-lg text-white"
+                      href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
+                      onclick="onClickBecomeSpeaker()"
+                    >
+                      Become a speaker
+                    </a>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="card border-0 m-3 speaker">
-          <picture>
-            <source
-              srcset="src/img/speakers/james-powel.webp"
-              media="screen"
-              type="image/webp"
-            />
-            <source
-              srcset="src/img/speakers/james-powel.jpeg"
-              media="screen"
-              type="image/jpeg"
-            />
-            <img
-              src="src/img/speakers/james-powel.jpeg"
-              class="card-img-top"
-              alt="James Powel"
-            />
-          </picture>
-          <div class="card-body">
-            <h5 class="card-title">James Powel</h5>
-            <p class="card-text">
-              Scientific computing, data science, quant finance, Python. Board
-              Chair @NumFOCUS. Known for: @PyData @NYCPython . Consulting &
-              training @dutc_training
-            </p>
+          <div class="col-sm-4">
+            <div class="card border-0 text-center">
+            <div class="card-body">
+            <div>
+              <h2 class="card-title">
+                <i class="bi bi-envelope"></i>
+                Newsletter</h2>
+              <div class="card-text">
+              <p>Would you like to be be updated?</p>
+              <a
+                class="btn bg-success btn-lg text-white"
+                href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
+              >
+                Subscribe
+              </a>
+              </div>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
       </div>
@@ -546,62 +615,12 @@
       </div>
     </div> -->
 
-    <!-- Talks-->
-    <div id="Talks" class="container-fluid pt-5 bg-white">
-      <h4 class="text-center pt-2 font-weight-bold">Talks</h4>
-      <div class="d-flex flex-wrap justify-content-center p-2">
-        <div class="talk-container"></div>
-      </div>
-    </div>
-
-    <!-- Actions -->
-    <div class="container-sm" id="actions">
-      <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
-        <div class="col d-flex align-items-start">
-          <div class="icon-square text-dark flex-shrink-0 me-3">
-            <i class="bi bi-alarm"></i>
-          </div>
-          <div>
-            <h2>Participate</h2>
-            <p>This will be great!</p>
-            <a
-              class="btn bg-success btn-lg text-white"
-              href="https://tickets.paysera.com/lt/event/pycon-lithuania-2022-bdda"
-              target="_blank"
-              onclick="onClickTickets()"
-            >
-              Buy tickets
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-mic me-3"></i>
-          <div>
-            <h2>For Speakers</h2>
-            <p>Share your you knowledge</p>
-            <p>Your talk will be recorded shared over the internet</p>
-            <p>Speakers receive free ticket</p>
-            <a
-              class="btn bg-success btn-lg text-white"
-              href="https://pretalx.com/pycon-lt-2022/cfp?fbclid=IwAR0bbVF8h7pDi-mwCb9h9QcG42rbkIKxsgCM_p-BgrbeQNpr2PnG4gBn0TE"
-              onclick="onClickBecomeSpeaker()"
-            >
-              Become a speaker
-            </a>
-          </div>
-        </div>
-        <div class="col d-flex align-items-start">
-          <i class="bi bi-envelope me-3"></i>
-          <div>
-            <h2>Newsletter</h2>
-            <p>Would you like to be be updated?</p>
-            <a
-              class="btn bg-success btn-lg text-white"
-              href="https://mailchi.mp/33c3df7619af/pyconlt-2019"
-            >
-              Subscribe
-            </a>
-          </div>
+    <div class="container-fluid pt-5 pb-5 bg-dark">
+      <!-- Talks-->
+      <div id="Talks" class="container-sm shadow bg-white">
+        <h4 class="text-center pt-2 font-weight-bold">Talks</h4>
+        <div class="d-flex flex-wrap justify-content-center p-2">
+          <div class="talk-container"></div>
         </div>
       </div>
     </div>
@@ -638,9 +657,10 @@
             </a>
             <a href="https://www.convious.com/">
               <img
-                class="d-block mx-auto mt-3"
-                src="src/img/logos/convious.png"
+                class="d-block mx-auto mt-3 img-fluid"
+                src="src/img/logos/convious.svg"
                 alt="Convious Logo"
+                height="100"
               />
             </a>
             <a href="https://revelsystems.com/">
@@ -648,6 +668,21 @@
                 class="d-block mx-auto"
                 src="src/img/logos/revel-systems.png"
                 alt="RevelSystems Logo"
+              />
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm text-blue align-self-center text-center">
+            <h3>PyData track sponsor:</h3>
+          </div>
+          <div class="col-sm">
+            <a href="https://oxylabs.com/">
+              <img
+                class="d-block mx-auto float-start"
+                src="src/img/logos/Oxylabs_Logo_Dark.png"
+                alt="Oxylabs Logo"
+                height="100"
               />
             </a>
           </div>

@@ -19,6 +19,8 @@ const parseTalks = (data) => {
   const container = document.querySelector("div.talk-container");
   const table = document.createElement("table");
   table.classList.toggle("table");
+  table.classList.add("table");
+  table.classList.add("table-striped");
   container.appendChild(table);
   const tbody = document.createElement("tbody");
 
