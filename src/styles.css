@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 .btn-danger,
 .btn-danger:hover,
 .btn-danger:active,
@@ -127,15 +131,11 @@ a.nav-link {
 }
 
 #about {
+  margin-top: -4%;
+}
+
+#location, #Talks {
   margin-top: -5%;
-}
-
-#speakers {
-  margin-top: -70px;
-}
-
-#location {
-  margin-top: -80px;
 }
 
 .bi {
