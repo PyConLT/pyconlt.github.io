@@ -172,13 +172,10 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="src/styles.css" />
 
-    <!-- Popper -->
+    <!-- Pretalx -->
+    <script src="https://pretalx.com/pycon-lt-2022/schedule/widget/v2.en.js"></script>
 
-    <!-- <script
-      defer
-      type="text/javascript"
-      src="https://pretalx.com/pyconlt2020/schedule/widget/v2.en.js"
-    ></script> -->
+    <!-- Custom JS -->
     <script defer src="src/script.js"></script>
   </head>
 
@@ -544,6 +541,7 @@
           </div>
         </div>
       </div>
+
       <!-- Actions -->
       <div class="container-sm mt-5" id="actions">
         <div class="row">
@@ -621,12 +619,28 @@
       </div>
     </div> -->
 
-    <div class="container-fluid pt-5 pb-5 bg-dark">
-      <!-- Talks-->
-      <div id="Talks" class="container-sm shadow bg-white">
-        <h4 class="text-center pt-2 font-weight-bold">Talks</h4>
-        <div class="d-flex flex-wrap justify-content-center p-2">
-          <div class="talk-container"></div>
+    <div id="schedule">
+      <h4 class="text-center p-2 font-weight-bold">Talks</h4>
+      <div class="d-flex flex-wrap justify-content-center p-2">
+        <div class="container">
+          <pretalx-schedule
+            event-url="https://pretalx.com/pycon-lt-2022/"
+            locale="en"
+            format="list"
+          ></pretalx-schedule>
+          <noscript>
+            <div class="pretalx-widget">
+              <div class="pretalx-widget-info-message">
+                JavaScript is disabled in your browser. To access our schedule
+                without JavaScript, please
+                <a
+                  target="_blank"
+                  href="https://pretalx.com/pycon-lt-2022/schedule/"
+                  >click here</a
+                >.
+              </div>
+            </div>
+          </noscript>
         </div>
       </div>
     </div>
