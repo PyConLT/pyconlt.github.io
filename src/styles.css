@@ -170,3 +170,7 @@ a.nav-link {
     transform: translateY(0);
   }
 }
+
+.photo-fit {
+  object-fit: scale-down;
+}

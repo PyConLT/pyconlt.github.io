@@ -1,26 +1,53 @@
 const pretalxSpeakers =
   "https://pretalx.com/api/events/pycon-lt-2022/speakers/";
 const pretalxTalks = "https://pretalx.com/api/events/pycon-lt-2022/talks/";
+const keynoteCodes = ["BGNNHY", "ADBT7H"];
+
 const parseSpeakers = (data) => {
   const container = document.querySelector("div.speaker-container");
-  const ul = document.createElement("ul");
-  container.appendChild(ul);
 
-  // let lis = data.results.filter((speaker) => !speaker.name.includes("astian"));
-  const lis = data.results.map((speaker) => {
-    const li = document.createElement("li");
-    li.textContent = speaker.name;
-    return li;
+  const speakers = data.results.filter((speaker) => {
+    if (keynoteCodes.includes(speaker.code)) {
+      return false;
+    } else {
+      return true;
+    }
   });
-  lis.forEach((li) => ul.appendChild(li));
+
+  const lis = speakers.map((speaker) => {
+      const divCard = document.createElement("div");
+      divCard.classList.add("card", "border-0", "m-3");
+      const image = document.createElement("img");    
+      image.classList.add("photo-fit");
+      if (speaker.avatar) {
+        image.src = speaker.avatar;
+        image.height = "300";
+      } else {
+        image.src = "src/img/icons/no-avatar.png";
+      }
+      divCard.appendChild(image);
+
+      const cardBody = document.createElement("div");
+      cardBody.classList.add("card-body");
+      const nameHeader = document.createElement("h5");
+      nameHeader.classList.add("card-title");
+      nameHeader.innerHTML += speaker.name;
+      cardBody.appendChild(nameHeader);
+      const bio = document.createElement("p");
+      bio.classList.add("card-text");
+      bio.innerHTML += speaker.biography;
+      cardBody.appendChild(bio);
+      divCard.appendChild(cardBody);
+      return divCard;
+  });
+  lis.forEach((divCard) => container.appendChild(divCard));
 };
 
 const parseTalks = (data) => {
   const container = document.querySelector("div.talk-container");
   const table = document.createElement("table");
   table.classList.toggle("table");
-  table.classList.add("table");
-  table.classList.add("table-striped");
+  table.classList.add("table", "table-striped");
   container.appendChild(table);
   const tbody = document.createElement("tbody");
 
@@ -50,9 +77,9 @@ const parseTalks = (data) => {
 };
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  // fetch(pretalxSpeakers)
-  //   .then((response) => response.json())
-  //   .then((data) => parseSpeakers(data));
+  fetch(pretalxSpeakers)
+    .then((response) => response.json())
+    .then((data) => parseSpeakers(data));
 
   fetch(pretalxTalks)
     .then((response) => response.json())
