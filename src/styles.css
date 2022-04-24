@@ -174,3 +174,12 @@ a.nav-link {
 .photo-fit {
   object-fit: scale-down;
 }
+
+.speaker-container > .card > .card-body {
+  max-height: 360px;
+  overflow: auto;
+}
+
+#schedule {
+  background-image: url(img/BG-SVG.svg);
+}
