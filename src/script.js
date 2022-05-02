@@ -77,9 +77,9 @@ const parseTalks = (data) => {
 };
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  fetch(pretalxSpeakers)
-    .then((response) => response.json())
-    .then((data) => parseSpeakers(data));
+ // fetch(pretalxSpeakers)
+ //   .then((response) => response.json())
+ //   .then((data) => parseSpeakers(data));
 
   fetch(pretalxTalks)
     .then((response) => response.json())
